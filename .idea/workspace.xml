@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeftOvr/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeftOvr/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcss/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcss/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcss/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcss/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CustomerHomepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CustomerHomepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/RestaurantRegistration.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RestaurantRegistration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/customerRegistration.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/customerRegistration.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +45,19 @@
       <option name="presentableId" value="Default" />
       <updated>1602721694453</updated>
     </task>
+    <task id="LOCAL-00001" summary="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later">
+      <created>1602776938962</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602776938962</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="90" key="#Inspections" timestamp="1602750392190">
