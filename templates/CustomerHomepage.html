@@ -122,7 +122,8 @@ a {
         <!-- end header inner -->
     </header>
 
-<form action="/action_page.php">
+<form action="/acti/" method="post">
+    {% csrf_token %}
   <div class="container">
     <h1>Welcome Customer!</h1>
     <p>What free food options are near you?Let's get started!</p>

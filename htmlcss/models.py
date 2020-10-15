@@ -1,14 +1,16 @@
 from django.db import models
 
+
 class Customer(models.Model):
     firstName = models.CharField(max_length=250)
     lastName = models.CharField(max_length=250)
-    idNum = models.CharField(max_length=12)
+    idNum = models.CharField(max_length=13)
     email = models.CharField(max_length=500)
     passWords = models.CharField(max_length=500)
+    custAddress = " "
 
     def __str__(self):
-        return self.firstName + ' ' + self.lastName + ' ' + self.idNum
+        return self.firstName + ' ' + self.lastName + '   ' + self.custAddress + '   ' + self.idNum
 
 class Restaurant(models.Model):
     busName = models.CharField(max_length=500)
@@ -18,7 +20,7 @@ class Restaurant(models.Model):
     busPassWords = models.CharField(max_length=500)
 
     def __str__(self):
-        return self.busName + ' ' + self.einNum
+        return self.busName + '  ' + self.busAddress + '   ' + self.einNum
 
 class Meals(models.Model):
     mealType = models.CharField(max_length=500)

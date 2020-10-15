@@ -30,5 +30,8 @@ urlpatterns = [
     path('restReg', views.restReg, name='restReg'),
     path('sendMes', views.sendMes, name='sendMes'),
     path('wh', views.wh, name='why'),
-    path('logI', views.logI, name='login')
+    path('logI', views.logI, name='login'),
+    path('action/', views.actionC, name='actionC'),
+    path('act/', views.actionR, name='actionR'),
+    path('acti/', views.actionCH, name='actionCH')
 ]
