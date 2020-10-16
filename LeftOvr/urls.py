@@ -33,5 +33,9 @@ urlpatterns = [
     path('logI', views.logI, name='login'),
     path('action/', views.actionC, name='actionC'),
     path('act/', views.actionR, name='actionR'),
-    path('acti/', views.actionCH, name='actionCH')
+    path('acti/', views.actionCH, name='actionCH'),
+    path('actio/', views.actionL, name='actionL'),
+    path('new/', views.actionRH, name='actionRH'),
+    path('restSamp', views.restSamp, name='restSamp'),
+    path('new1/', views.actionRI, name='actionRI'),
 ]

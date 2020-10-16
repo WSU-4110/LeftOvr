@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import Customer
 from .models import Restaurant
 from .models import Meals
+from django.contrib.auth import authenticate, login
 
 def index(request):
     return render(request, 'index.html')
@@ -68,5 +69,36 @@ def actionCH(request):
     Customer.custAddress = addr
 
     return render(request, "customersamplepage.html")
+
+def actionRH(request):
+    addre = request.POST.get("location")
+    Restaurant.busAddress = addre
+
+    return render(request, "RestaurantInput.html")
+
+def actionL(request):
+    e = request.POST.get("email")
+    pj = request.POST.get("psw")
+
+    user = authenticate(request, email=e, passWords=pj)
+    if user is None:
+        return render(request, "login.html", {"message": "incorrect login!"})
+    else:
+        login(request, user)
+        return render(request, "customersamplepage.html")
+
+def restSamp(request):
+    return render(request, "Restaurantsamplepage.html")
+
+def actionRI(request):
+    d = request.POST.get("dish")
+    di = request.POST.get("dishnum")
+    dis = request.POST.get("dishes")
+
+    lo = Meals(mealType=d, mealAvail=di)
+    lo.save()
+
+    return render(request, "Restaurantsamplepage.html")
+
 
 

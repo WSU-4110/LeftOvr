@@ -121,7 +121,8 @@ a {
         <!-- end header inner -->
     </header>
 
-<form action="/action_page.php">
+<form action="/actio/" method="post">
+    {% csrf_token %}
   <div class="container">
     <h1>Log in</h1>
         <hr>
@@ -139,7 +140,11 @@ a {
     <p> <a href="#">Forgot password?</a>.</p>
   </div>
 </form>
-
+    <h3 align="center">
+        <font color="eeeeeF" face="chill">
+            {{ message }}
+        </font>
+    </h3>
 
  <!-- footer -->
     <footer>

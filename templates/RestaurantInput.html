@@ -123,9 +123,10 @@ a {
         <!-- end header inner -->
     </header>
 
-<form action="/action_page.php">
+<form action="/new1/" method="post">
+    {% csrf_token %}
   <div class="container">
-    <h1>Welcome Customer!</h1>
+    <h1>Welcome Restaurant Owner!</h1>
     <p>Add available dishes for pickup!</p>
     <hr>
 <input type="text" placeholder="Name of dish" name="dish" id="dish" required>
@@ -134,7 +135,7 @@ a {
 <input type="text" placeholder="Number of dishes available" name="dishnum" id="dishnum" required>
 <hr>
 
-<input type="text" placeholder="Time alloted for pickup" name="dish" id="dish" required>
+<input type="text" placeholder="Time alloted for pickup" name="dish" id="dishes" required>
 <hr>
 <li> <img src="{% static 'icon/camera.png' %}"><button type="submit" class="foodpic">Picture of food</button>
 <hr>
