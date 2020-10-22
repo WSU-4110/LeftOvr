@@ -1,5 +1,5 @@
-<h1 align="center"> LeftOvr<br> <img src ="logo4.png"></h1>
-<h1 align="center"> About us </h1>
+<h1> LeftOvr<br> <img src ="logo4.png" alt="Logo"></h1>
+<h1> About us </h1>
 
 ```
 Food waste has been a problem for ages. 
