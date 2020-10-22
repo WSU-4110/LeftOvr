@@ -6,11 +6,11 @@
 
 # Contributors 
 >> ### FrontEnd: 
-  * Susanna Arun
-  * Fahmida Chowdhury
+ > * Susanna Arun
+ > * Fahmida Chowdhury
 >> ### BackEnd
-  * De'jon White 
-  * Omari King
+ > * De'jon White 
+ > * Omari King
    
 
  
