@@ -24,12 +24,12 @@ by connecting individuals with restaurants.
   python3 manage.py runserver
   ```
 # Developers
->> ### FrontEnd: 
+#### FrontEnd: 
 ```
    Susanna Arun
    Fahmida Chowdhury
   ```
->> ### BackEnd
+#### BackEnd
 ```
   De'jon White 
   Omari King
