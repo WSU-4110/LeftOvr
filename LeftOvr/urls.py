@@ -38,4 +38,5 @@ urlpatterns = [
     path('new/', views.actionRH, name='actionRH'),
     path('restSamp', views.restSamp, name='restSamp'),
     path('new1/', views.actionRI, name='actionRI'),
+    path('custPassReq/', views.custPassReq, name='custPassReq'),
 ]

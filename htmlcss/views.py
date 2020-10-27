@@ -40,6 +40,9 @@ def wh(request):
 def logI(request):
     return render(request, 'login.html')
 
+def custPassReq(request):
+    return render(request, 'customerPasswordForget.html')
+
 def actionC(request):
     fname = request.POST.get("first-name")
     lname = request.POST.get("last-name")
