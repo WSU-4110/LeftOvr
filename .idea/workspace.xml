@@ -30,11 +30,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later">
-      <change beforePath="$PROJECT_DIR$/.idea/LeftOvr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LeftOvr.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeftOvr/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeftOvr/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcss/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcss/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CustomerHomepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CustomerHomepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/aboutus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +55,15 @@
   </component>
   <component name="JupyterTrust" id="c970b5f5-c21e-4659-8421-87337a4e8bc4" />
   <component name="ProjectId" id="1itKxPil5vTmPBFyq720kdqo3xE" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -68,6 +73,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/images" />
       <recent name="C:\Users\JohnW\Desktop\LeftOvr\statics\css" />
     </key>
   </component>
@@ -84,7 +90,10 @@
       <updated>1602721694453</updated>
       <workItem from="1603318988743" duration="186000" />
       <workItem from="1603479931516" duration="1728000" />
-      <workItem from="1603988922090" duration="952000" />
+      <workItem from="1603988922090" duration="1178000" />
+      <workItem from="1603991505909" duration="315000" />
+      <workItem from="1604162890128" duration="4272000" />
+      <workItem from="1604173053413" duration="667000" />
     </task>
     <task id="LOCAL-00001" summary="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later">
       <created>1602776938962</created>
@@ -107,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603481623844</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added a default image for user profile. and made small change to database">
+      <created>1603990902568</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603990902568</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,9 +154,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later" />
     <MESSAGE value="changed statics to static(file name). added alt=&quot;&quot; to image src lines." />
-    <option name="LAST_COMMIT_MESSAGE" value="changed statics to static(file name). added alt=&quot;&quot; to image src lines." />
+    <MESSAGE value="added a default image for user profile. and made small change to database" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="90" key="#Inspections" timestamp="1602750392190">

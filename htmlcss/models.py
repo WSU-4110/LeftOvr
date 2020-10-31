@@ -7,7 +7,6 @@ class Customer(models.Model):
     idNum = models.CharField(max_length=13)
     email = models.CharField(max_length=500)
     passWords = models.CharField(max_length=500)
-    profile_pic = models.ImageField(null=True, blank=True)
 
 
     custAddress = " "
