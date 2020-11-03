@@ -77,11 +77,14 @@ a {
   color: dodgerblue;
 }
 
+
 /* Set a grey background color and center the text of the "sign in" section */
 .signin {
   background-color: none;
   text-align: center;
 }
+
+
 </style>
 </head>
 <!-- body -->
@@ -95,7 +98,7 @@ a {
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                         <div class="full">
                             <div class="center-desk">
-                                <div class="logo"> <a href="{% url 'index' %}"><img src="{% static 'images/logo4.jpg' %}" alt="#"></a> </div>
+                                <div class="logo"> <a href="#"><img src="{% static 'images/logo4.jpg' %}" alt="#"></a> </div>
                             </div>
                         </div>
                     </div>
@@ -105,7 +108,23 @@ a {
                             <div class="limit-box">
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
-                                        <li class="mean-last"> <a href="#"><img src="{% static 'images/search_icon.png' %}" alt="#" /></a> </li>
+                                        <li class="menu-last"> <a href= "#"> My Account</a>
+                                            <ul>
+                                            <li> <a href="#"> Profile</a> </li>
+                                            <li> <a href="#"> Receipts</a> </li>
+                                            <li> <a href="{% url 'cont' %}">Contact us</a> </li>
+                                            <li> <a href="{% url 'why' %}"> Why?</a> </li>
+                                            <li> <a href="{% url 'cont' %}">Contact us</a> </li>
+                                            <hr>
+                                            <li> <a href="#" class="logout"> Log Out </a></li>
+                                        </ul>
+                                        </li>
+                                        <li class="search-icon">
+                                            <input type="search" placeholder="Search for restaurants">
+                                            <label class="icon">
+                                                <span class="fas fa-search"></span>
+                                            </label>
+                                        </li>
                                         <li class="mean-last"> <a href="#"><img src="{% static 'images/top-icon.png' %}" alt="#" /></a>
                                         <ul>
                                             <li> <a href="#"> Profile</a> </li>

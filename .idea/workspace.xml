@@ -30,15 +30,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later">
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/DefaultheaderRest.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/HeaderNLogoRest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/UploadProfileCust.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeftOvr/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeftOvr/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/CustomerHomepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CustomerHomepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/RestaurantHomepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RestaurantHomepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/customerPasswordForget.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/customerPasswordForget.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/RestaurantRegistration.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RestaurantRegistration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/aboutus.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/customerRegistration.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/customerRegistration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/customersamplepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/customersamplepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/password_reset.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/password_reset.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/password_reset_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/password_reset_confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/password_reset_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/password_reset_done.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +73,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
@@ -98,6 +102,7 @@
       <workItem from="1604173053413" duration="964000" />
       <workItem from="1604174835067" duration="210000" />
       <workItem from="1604365129364" duration="791000" />
+      <workItem from="1604370242588" duration="4054000" />
     </task>
     <task id="LOCAL-00001" summary="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later">
       <created>1602776938962</created>
