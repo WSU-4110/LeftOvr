@@ -30,8 +30,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CustomerHomepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CustomerHomepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/RestaurantHomepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RestaurantHomepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/customerPasswordForget.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/customerPasswordForget.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/customerRegistration.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/customerRegistration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/customersamplepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/customersamplepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/password_reset.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/password_reset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/password_reset_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/password_reset_confirm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/password_reset_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/password_reset_done.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +97,7 @@
       <workItem from="1604162890128" duration="4272000" />
       <workItem from="1604173053413" duration="964000" />
       <workItem from="1604174835067" duration="210000" />
-      <workItem from="1604365129364" duration="228000" />
+      <workItem from="1604365129364" duration="791000" />
     </task>
     <task id="LOCAL-00001" summary="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later">
       <created>1602776938962</created>
@@ -127,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604174082325</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Deleted all repeated files. checked page after looks fine.">
+      <created>1604365733361</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604365733361</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,7 +177,8 @@
     <MESSAGE value="changed statics to static(file name). added alt=&quot;&quot; to image src lines." />
     <MESSAGE value="added a default image for user profile. and made small change to database" />
     <MESSAGE value="Trying to create page header after login-customer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to create page header after login-customer" />
+    <MESSAGE value="Deleted all repeated files. checked page after looks fine." />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleted all repeated files. checked page after looks fine." />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="90" key="#Inspections" timestamp="1602750392190">
