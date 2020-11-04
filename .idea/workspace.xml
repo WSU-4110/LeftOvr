@@ -30,12 +30,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later">
-      <change afterPath="$PROJECT_DIR$/static/images/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/download.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/o.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/s.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/aboutus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sampleUserProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sampleUserProfile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604472946963</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added better images to developer information">
+      <created>1604473598546</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1604473598546</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +195,8 @@
     <MESSAGE value="Deleted all repeated files. checked page after looks fine." />
     <MESSAGE value="put some code TimerSampleCode.html that can be used for the internal timer" />
     <MESSAGE value="added creator information in about us" />
-    <option name="LAST_COMMIT_MESSAGE" value="added creator information in about us" />
+    <MESSAGE value="added better images to developer information" />
+    <option name="LAST_COMMIT_MESSAGE" value="added better images to developer information" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="90" key="#Inspections" timestamp="1602750392190">
