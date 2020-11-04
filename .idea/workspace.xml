@@ -30,18 +30,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/DefaultheaderRest.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/HeaderNLogoRest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/UploadProfileCust.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/TimerSampleCode.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeftOvr/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeftOvr/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CustomerHomepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CustomerHomepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/RestaurantRegistration.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RestaurantRegistration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/aboutus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/customerRegistration.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/customerRegistration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/customersamplepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/customersamplepage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
