@@ -30,9 +30,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later">
-      <change afterPath="$PROJECT_DIR$/templates/TimerSampleCode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/panda.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/NoResult.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sampleUserProfile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/customersamplepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/customersamplepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeftOvr/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeftOvr/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/aboutus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604365733361</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="put some code TimerSampleCode.html that can be used for the internal timer">
+      <created>1604449258431</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604449258431</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +185,8 @@
     <MESSAGE value="added a default image for user profile. and made small change to database" />
     <MESSAGE value="Trying to create page header after login-customer" />
     <MESSAGE value="Deleted all repeated files. checked page after looks fine." />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted all repeated files. checked page after looks fine." />
+    <MESSAGE value="put some code TimerSampleCode.html that can be used for the internal timer" />
+    <option name="LAST_COMMIT_MESSAGE" value="put some code TimerSampleCode.html that can be used for the internal timer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="90" key="#Inspections" timestamp="1602750392190">
