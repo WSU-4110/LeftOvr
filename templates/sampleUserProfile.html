@@ -68,6 +68,64 @@ $("#imageUpload").change(function(){
 }
 </style>
 </head>
+<!-- body -->
+    <header>
+        <!-- header inner -->
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo"> <a href="#"><img src="{% static 'images/logo4.jpg' %}" alt="#"></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <i class="fa fa-bars"> </i>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <div class="menu-area">
+                            <div class="limit-box">
+                                <nav class="main-menu">
+                                    <ul class="menu-area-main">
+                                        <li class="menu-last"> <a href= "#"> My Account</a>
+                                            <ul>
+                                            <li> <a href="#"> Profile</a> </li>
+                                            <li> <a href="#"> Receipts</a> </li>
+                                            <li> <a href="{% url 'cont' %}">Contact us</a> </li>
+                                            <li> <a href="{% url 'why' %}"> Why?</a> </li>
+                                            <li> <a href="{% url 'cont' %}">Contact us</a> </li>
+                                            <hr>
+                                            <li> <a href="#" class="logout"> Log Out </a></li>
+                                        </ul>
+                                        </li>
+                                        <li class="search-icon">
+                                            <form class="search">
+                                           <input type="text" class="s-input" placeholder="Search for restaurants..........." required>
+                                          </form>
+
+                                        </li>
+                                        <li class = "icon"> <a href="#search-icon">
+                                            <img src="{% static 'images/search_icon.png' %}" class="icon"></a>
+</li>
+                                        <li class="mean-last"> <a href="#"><img src="{% static 'images/top-icon.png' %}" alt="#" /></a>
+                                        <ul>
+                                            <li> <a href="#"> Profile</a> </li>
+                                            <li> <a href="#"> Receipts</a> </li>
+                                            <li> <a href="{% url 'cont' %}">Contact us</a> </li>
+                                            <li> <a href="{% url 'why' %}"> Why?</a> </li>
+                                            <li> <a href="{% url 'cont' %}">Contact us</a> </li>
+                                            <hr>
+                                            <li> <a href="#" class="logout"> Log Out </a></li>
+                                        </ul></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 <body>
 <h1 style="align: center"> Your Profile</h1>
 
@@ -96,15 +154,37 @@ $("#imageUpload").change(function(){
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                         <div class="JJcoach">
-                            <h3>LeftOver <strong class="coa"> </strong></h3>
-                        </div>
 
+                                <h3>LeftOver <strong class="coa"> </strong></h3>
+
+                        </div>
                     </div>
 
 
                 </div>
-                <div class="row pdn-top-30">
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+
+                        <div class="container">
+    <h1>Customer Profile</h1>
+<div class="profile-pic"> <a href="#"><img src="{% static 'images/defaultprofile.jpg' %}" alt="#"></a>
+    <hr>
+<label for="first-name"><b>First Name</b></label>
+<input type="text" placeholder="Jessica" name="first-name" id="first-name" required>
+<label for="last-name"><b>Last Name</b></label>
+<input type="text" placeholder="Miles" name="last-name" id="last-name" required>
+<label for="last-name"><b>Email</b></label>
+ <input type="text" placeholder="jessica.miles@gmail.com" name="email" id="email" required>
+
+                        </div>
+  <div class="password change">
+      <h2>Change password?</h2>
+      <label for="old-password"><b>Old Password</b></label>
+      <input type="text" placeholder="Please enter your old password" name="old-password" id="old-password" required>
+      <label for="new-password"><b>New Password</b></label>
+      <input type="text" placeholder="Please enter your new password" name="new-password" id="new-password" required>
+      <label for="re-new-password"><b>New Password</b></label>
+      <input type="text" placeholder="Please re-enter your new password" name="re-new-password" id="re-new-password" required>
+  </div>
+
                         <ul class="location_icon">
                             <li> <img src="{% static 'icon/location.png' %]"> <span>Detroit, Michigan<br>United States</span></li>
 
@@ -128,6 +208,8 @@ $("#imageUpload").change(function(){
                             <li> <a href="#"><img src="{% static 'icon/linkedin.png' %}"></a></li>
                             <li> <a href="#"><img src="{% static 'icon/google+.png' %}"></a></li>
                         </ul>
+
+
                     </div>
                 </div>
             </div>
