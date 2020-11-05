@@ -31,10 +31,21 @@ class Meals(models.Model):
     def __str__(self):
         return self.mealAvail + ' ' + self.mealType
 
-class slots(models.Model):
-    meal = models.ForeignKey(Meals, on_delete=models.CASCADE)
+class ContactUs(models.Model):
+    nameC = models.CharField(max_length=300)
+    emailC = models.CharField(max_length=500)
+    phoneC = models.CharField(max_length=13)
+    messageC = models.TextField(blank=True, null=True)
 
     def __str__(self):
-        return self.meal
+        return self.nameC + ' ' + self.emailC + ' ' + self.phoneC + ' ' + self.messageC
+
+class LocationArea(models.Model):
+    localArea = models.DecimalField(decimal_places=2, max_digits=10000)
+    localName = models.CharField(max_length=500)
+
+    def __str__(self):
+        return self.localName + ' ' + self.localArea
+
 
 

@@ -2,6 +2,8 @@ from django.shortcuts import render
 from .models import Customer
 from .models import Restaurant
 from .models import Meals
+from .models import LocationArea
+from .models import ContactUs
 from django.contrib.auth import authenticate, login
 
 def index(request):
@@ -89,6 +91,17 @@ def actionL(request):
 
 def restSamp(request):
     return render(request, "Restaurantsamplepage.html")
+
+def contactPage(request):
+    na = request.POST.get("name")
+    em = request.POST.get("email")
+    ph = request.POST.get("phone")
+    mee = request.POST.get("message")
+
+    u = ContactUs(nameC=na, emailC=em, phoneC=ph, messageC=mee)
+    u.save()
+
+    return render(request, "SendMessage.html")
 
 def actionRI(request):
     d = request.POST.get("dish")
