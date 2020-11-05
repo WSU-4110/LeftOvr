@@ -29,8 +29,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="contact page added with customer navigation bar">
-      <change afterPath="$PROJECT_DIR$/templates/CustAbout.html" afterDir="false" />
+    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="why page added with customer navigation bar">
+      <change afterPath="$PROJECT_DIR$/templates/AddRemoveMenu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +200,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604608345299</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="about page added with customer navigation bar">
+      <created>1604608490895</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1604608490895</updated>
+    </task>
+    <task id="LOCAL-00017" summary="why page added with customer navigation bar">
+      <created>1604608582502</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1604608582502</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +260,9 @@
     <MESSAGE value="created a sample receipt page" />
     <MESSAGE value="checking" />
     <MESSAGE value="contact page added with customer navigation bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="contact page added with customer navigation bar" />
+    <MESSAGE value="about page added with customer navigation bar" />
+    <MESSAGE value="why page added with customer navigation bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="why page added with customer navigation bar" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="90" key="#Inspections" timestamp="1602750392190">
@@ -288,11 +305,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1602795448546" />
-    <state x="549" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604608474000">
+    <state x="549" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604608568527">
       <screen x="0" y="23" width="1440" height="781" />
     </state>
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1602795031268" />
-    <state x="549" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.781@0.23.1440.781" timestamp="1604608474000" />
+    <state x="549" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.781@0.23.1440.781" timestamp="1604608568527" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602774015163">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
