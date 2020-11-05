@@ -122,7 +122,7 @@ a {
     </header>
 
 <form action="/actio/" method="post">
-    {% csrf_token %}
+        {% csrf_token %}
   <div class="container">
     <h1>Log in</h1>
         <hr>
@@ -137,7 +137,7 @@ a {
   </div>
 
   <div class="container signin">
-    <p> <a href={% url 'password_reset' %}>Forgot password?</a>.</p>
+    <p> <a href="{% url 'password_reset' %}">Forgot password?</a>.</p>
   </div>
 </form>
     <h3 align="center">

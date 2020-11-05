@@ -42,22 +42,4 @@ class Migration(migrations.Migration):
                 ('busPassWords', models.CharField(max_length=500)),
             ],
         ),
-        migrations.CreateModel(
-            name='ContactUs',
-            fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('nameC', models.CharField(max_length=300)),
-                ('emailC', models.CharField(max_length=500)),
-                ('phoneC', models.CharField(max_length=13)),
-                ('messageC', models.TextField(blank=True, null=True))
-            ],
-        ),
-        migrations.CreateModel(
-            name='LocationArea',
-            fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('localArea', models.DecimalField(decimal_places=2, max_digits=10000)),
-                ('localName', models.CharField(max_length=500)),
-            ],
-        ),
     ]

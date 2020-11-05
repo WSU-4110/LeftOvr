@@ -85,9 +85,6 @@ def actionL(request):
     user = authenticate(request, email=e, passWords=pj)
     if user is None:
         return render(request, "login.html", {"message": "incorrect login!"})
-    else:
-        login(request, user)
-        return render(request, "customersamplepage.html")
 
 def restSamp(request):
     return render(request, "Restaurantsamplepage.html")
