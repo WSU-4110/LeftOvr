@@ -58,24 +58,48 @@ hr {
 }
 
 /* Set a style for the submit button */
-.registerbtn {
-  background-color: #CF9695;
-  color: white;
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
-.registerbtn:hover {
-  opacity: 1;
-}
 
 a {
   color: dodgerblue;
 }
+
+.search {
+    width: 450px;
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: width .10s ease-out;
+}
+.search .s-input {
+    width: 90%;
+    border-radius: 12px;
+    background-color: #CF9695;
+    border: black;
+    outline: #0c5460;
+    padding: 12px 20px 12px 40px;
+    font-weight: 400;
+    font-family: Courier New, monospace;
+    font-size: 16px;
+    color: black;
+
+    margin-right: -18px;
+}
+.search::placeholder {
+    color: #491217;
+}
+ .search:focus {
+      width: 100%;
+    }
+ .icon{
+     height: 22px;
+
+ }
+ .search:active {
+      transform: translateY(2px);
+    }
+
 
 
 /* Set a grey background color and center the text of the "sign in" section */
@@ -88,8 +112,6 @@ a {
 </style>
 </head>
 <!-- body -->
-
-<body class="main-layout">
     <header>
         <!-- header inner -->
         <div class="header">
@@ -120,11 +142,14 @@ a {
                                         </ul>
                                         </li>
                                         <li class="search-icon">
-                                            <input type="search" placeholder="Search for restaurants">
-                                            <label class="icon">
-                                                <span class="fas fa-search"></span>
-                                            </label>
+                                            <form class="search">
+                                           <input type="text" class="s-input" placeholder="Search for restaurants..........." required>
+                                          </form>
+
                                         </li>
+                                        <li class = "icon"> <a href="#search-icon">
+                                            <img src="{% static 'images/search_icon.png' %}" class="icon"></a>
+</li>
                                         <li class="mean-last"> <a href="#"><img src="{% static 'images/top-icon.png' %}" alt="#" /></a>
                                         <ul>
                                             <li> <a href="#"> Profile</a> </li>
@@ -145,7 +170,7 @@ a {
         </div>
         <!-- end header inner -->
     </header>
-
+<body class="main-layout">
 <form action="/acti/" method="post">
     {% csrf_token %}
   <div class="container">
