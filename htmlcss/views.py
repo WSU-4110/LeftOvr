@@ -1,3 +1,4 @@
+
 from django.shortcuts import render
 from .models import Customer
 from .models import Restaurant
@@ -66,7 +67,7 @@ def actionR(request):
     h_ref = Restaurant(busName=nam, busAddress=ad, einNum=ei, busEmail=emai, busPassWords=passs)
     h_ref.save()
 
-    return render(request, "RestaurantHomepage.html")
+    return render(request, "HeaderNLogo.html")
 
 def actionCH(request):
     addr = request.POST.get("location")
@@ -80,16 +81,25 @@ def actionRH(request):
 
     return render(request, "RestaurantInput.html")
 
-def actionL(request):
-    e = request.POST.get("email")
-    pj = request.POST.get("psw")
-
-    user = authenticate(request, email=e, passWords=pj)
-    if user is None:
-        return render(request, "login.html", {"message": "incorrect login!"})
-
 def restSamp(request):
     return render(request, "Restaurantsamplepage.html")
+
+def actionL(request):
+    e = request.POST.get("email")
+    p = request.POST.get("psw")
+
+    i = Customer.email == e
+    j = Customer.passWords == p
+
+    ok = Restaurant.busEmail == e
+    lol = Restaurant.busPassWords == p
+
+    if i == True and j == True:
+        return render(request, "customersamplepage.html")
+    elif ok == True and lol == True:
+        return render(request, "RestaurantInput.html")
+    else:
+        return render(request, "login.html")
 
 def contactPage(request):
     na = request.POST.get("name")
