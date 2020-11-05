@@ -5,6 +5,8 @@ from .models import Meals
 from .models import LocationArea
 from .models import ContactUs
 from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
+from .forms import CustRegistrationForm, RestRegistrationForm, CustUpdateForm, RestUpdateForm, ProfileUpdateForm
 
 def index(request):
     return render(request, 'index.html')
@@ -110,5 +112,28 @@ def actionRI(request):
 
     return render(request, "Restaurantsamplepage.html")
 
+#Tackle after User Login and Logout are done
+@login_required
+def custProfile(request):
+    u_form = CustUpdateForm()
+    p_form = ProfileUpdateForm()
 
+    context = {
 
+        'u_form': u_form,
+        'p_form': p_form
+    }
+
+    return render(request, )
+
+def restProfile(request):
+    u_form = RestUpdateForm()
+    p_form = ProfileUpdateForm()
+
+    context = {
+
+        'u_form': u_form,
+        'p_form': p_form
+    }
+
+    return render(request, )
