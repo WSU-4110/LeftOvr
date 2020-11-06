@@ -41,6 +41,12 @@ urlpatterns = [
     path('new1/', views.actionRI, name='actionRI'),
     path('new2/', views.contactPage, name='contactPage'),
     path('actio/', views.actionL, name='actionL'),
+    path('proPage/', views.proPage, name='proPage'),
+    path('head/', views.head, name='head'),
+    path('pastRec', views.pastRec, name='pastRec'),
+    path('custAbout', views.custAbout, name='custAbout'),
+    path('custCont', views.custCont, name='custCont'),
+    path('custWhy', views.custWhy, name='custWhy'),
 
 
    path('password-reset/',

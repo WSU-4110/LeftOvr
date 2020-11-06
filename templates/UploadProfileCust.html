@@ -45,9 +45,10 @@
 <body>
 <h1>Before you get started.........</h1>
 <p> Please upload an image of yourself</p>
-<form action="/action_page.php">
+<form action="/proPage/" method="post">
+    {% csrf_token %}
   <input type="file" id="userProfile" name="profile" accept="image/*" capture style="display: flex" required/>
-    <img src="{% stativ 'images/defaultprofile.png' %}" id = "upfile1" style="cursor: pointer"/>
+    <img src="{% static 'images/defaultprofile.png' %}" id = "upfile1" style="cursor: pointer"/>
   <button type="submit" class="registerbtn">
       Register
   </button>

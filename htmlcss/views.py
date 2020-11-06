@@ -7,7 +7,7 @@ from .models import LocationArea
 from .models import ContactUs
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
-from .forms import CustRegistrationForm, RestRegistrationForm, CustUpdateForm, RestUpdateForm, ProfileUpdateForm
+
 
 def index(request):
     return render(request, 'index.html')
@@ -52,10 +52,14 @@ def actionC(request):
     ema = request.POST.get("email")
     pas = request.POST.get("psw")
 
-    o_ref = Customer(firstName=fname, lastName=lname, idNum=idd, email=ema, passWords=pas)
+    o_ref = Customer(firstName=fname, lastName=lname, idNum=idd, email=ema, password=pas)
     o_ref.save()
 
-    return render(request, "CustomerHomepage.html")
+    return render(request, "UploadProfileCust.html")
+
+def proPage(request):
+
+    return render(request, "sampleUserProfile.html")
 
 def actionR(request):
     nam = request.POST.get("business-name")
@@ -67,7 +71,7 @@ def actionR(request):
     h_ref = Restaurant(busName=nam, busAddress=ad, einNum=ei, busEmail=emai, busPassWords=passs)
     h_ref.save()
 
-    return render(request, "HeaderNLogo.html")
+    return render(request, "HeaderNLogoRest.html")
 
 def actionCH(request):
     addr = request.POST.get("location")
@@ -88,18 +92,17 @@ def actionL(request):
     e = request.POST.get("email")
     p = request.POST.get("psw")
 
-    i = Customer.email == e
-    j = Customer.passWords == p
+    return render(request, "login.html")
 
-    ok = Restaurant.busEmail == e
-    lol = Restaurant.busPassWords == p
+def custAbout(request):
+    return render(request, "CustAbout.html")
 
-    if i == True and j == True:
-        return render(request, "customersamplepage.html")
-    elif ok == True and lol == True:
-        return render(request, "RestaurantInput.html")
-    else:
-        return render(request, "login.html")
+def custWhy(request):
+    return render(request, "CustWhy.html")
+
+def custCont(request):
+    return render(request, "CustContact.html")
+
 
 def contactPage(request):
     na = request.POST.get("name")
@@ -112,6 +115,9 @@ def contactPage(request):
 
     return render(request, "SendMessage.html")
 
+def pastRec(request):
+    return render(request, "PastReceipt.html")
+
 def actionRI(request):
     d = request.POST.get("dish")
     di = request.POST.get("dishnum")
@@ -120,30 +126,7 @@ def actionRI(request):
     lo = Meals(mealType=d, mealAvail=di)
     lo.save()
 
-    return render(request, "Restaurantsamplepage.html")
+    return render(request, "HeaderNLogo.html")
 
-#Tackle after User Login and Logout are done
-@login_required
-def custProfile(request):
-    u_form = CustUpdateForm()
-    p_form = ProfileUpdateForm()
-
-    context = {
-
-        'u_form': u_form,
-        'p_form': p_form
-    }
-
-    return render(request, )
-
-def restProfile(request):
-    u_form = RestUpdateForm()
-    p_form = ProfileUpdateForm()
-
-    context = {
-
-        'u_form': u_form,
-        'p_form': p_form
-    }
-
-    return render(request, )
+def head(request):
+    return render(request, "RestaurantHomepage.html")
