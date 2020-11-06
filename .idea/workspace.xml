@@ -29,14 +29,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="Stuff">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_5_20__3_27_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_5_20__3_27_PM__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_5_20__7_27_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_5_20__7_27_PM__Default_Changelist_.xml" afterDir="false" />
+    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="why page added with customer navigation bar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeftOvr/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeftOvr/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcss/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcss/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CustAbout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CustAbout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CustContact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CustContact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CustWhy.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CustWhy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/PastReceipt.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/PastReceipt.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/receiptSample.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/receiptSample.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sampleUserProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sampleUserProfile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -282,10 +282,6 @@
       <screen x="0" y="23" width="1440" height="786" />
     </state>
     <state x="371" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.786@0.23.1440.786" timestamp="1604477184028" />
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604617392772">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1604617392772" />
     <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1602766703699">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -314,15 +310,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1602795448546" />
-    <state x="549" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604608568527">
+    <state x="549" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604623379227">
       <screen x="0" y="23" width="1440" height="781" />
     </state>
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1602795031268" />
-    <state x="549" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.781@0.23.1440.781" timestamp="1604608568527" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604621146301">
+    <state x="549" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.781@0.23.1440.781" timestamp="1604623379227" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602774015163">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604621146301" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1602774015163" />
     <state x="599" y="203" key="svn.repositoryBrowser" timestamp="1602766779452">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
