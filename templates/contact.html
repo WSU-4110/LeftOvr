@@ -121,6 +121,7 @@ a {
     </header>
 
 <form action="/new2/" method="post">
+    {% csrf_token %}
     <div>
         <div class="Contact">
         <div class="container">
@@ -147,7 +148,7 @@ a {
     <input type="textarea" placeholder="Enter Message/Feedback" name="message" id="message" required>
 <hr>
     
-            <button type="submit" class="sendbtn"><a href="{% url 'sendMes' %}">Send</a></button>
+            <button type="submit" class="sendbtn">Send</button>
   </div>
 <hr>
         </div> </div>

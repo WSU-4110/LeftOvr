@@ -126,7 +126,10 @@ def actionRI(request):
     lo = Meals(mealType=d, mealAvail=di)
     lo.save()
 
-    return render(request, "HeaderNLogo.html")
+    return render(request, "AddRemoveMenu.html")
 
 def head(request):
     return render(request, "RestaurantHomepage.html")
+
+def regRec(request):
+    return render(request, "receiptSample.html")

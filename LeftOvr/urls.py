@@ -47,6 +47,7 @@ urlpatterns = [
     path('custAbout', views.custAbout, name='custAbout'),
     path('custCont', views.custCont, name='custCont'),
     path('custWhy', views.custWhy, name='custWhy'),
+    path('regRec', views.regRec, name='regRec'),
 
 
    path('password-reset/',
