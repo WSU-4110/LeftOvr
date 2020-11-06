@@ -120,7 +120,7 @@ a {
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                         <div class="full">
                             <div class="center-desk">
-                                <div class="logo"> <a href="#"><img src="{% static 'images/logo4.jpg' %}" alt="#"></a> </div>
+                                <div class="logo"> <a href="{% url 'index' %}"><img src="{% static 'images/logo4.jpg' %}" alt="#"></a> </div>
                             </div>
                         </div>
                     </div>
@@ -131,15 +131,17 @@ a {
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
                                         <li class="menu-last"> <a href= "#"> My Account</a>
-                                            <ul>
-                                            <li> <a href="#"> Profile</a> </li>
-                                            <li> <a href="#"> Receipts</a> </li>
-                                            <li> <a href="{% url 'cont' %}">Contact us</a> </li>
-                                            <li> <a href="{% url 'why' %}"> Why?</a> </li>
-                                            <li> <a href="{% url 'cont' %}">Contact us</a> </li>
+                                          <ul>
+                                            <li> <a href="{ % 'proPage' %}"> Profile</a> </li>
+                                            <li> <a href="{% url 'regRec'"> Receipts</a> </li>
+                                             <li> <a href="{% url 'custAbout' %}">About us</a> </li>
+                                        <li> <a href="{% url 'custWhy' %}"> Why?</a> </li>
+                                        <li> <a href="{% url 'custCont' %}">Contact us</a> </li>
+                                        <li> <a href="{% url 'login' %}">Login </a> </li>
                                             <hr>
                                             <li> <a href="#" class="logout"> Log Out </a></li>
-                                        </ul>
+                                        </ul></li>
+                                    </ul>
                                         </li>
                                         <li class="search-icon">
                                             <form class="search">
@@ -152,11 +154,12 @@ a {
 </li>
                                         <li class="mean-last"> <a href="#"><img src="{% static 'images/top-icon.png' %}" alt="#" /></a>
                                         <ul>
-                                            <li> <a href="#"> Profile</a> </li>
-                                            <li> <a href="#"> Receipts</a> </li>
-                                            <li> <a href="{% url 'cont' %}">Contact us</a> </li>
-                                            <li> <a href="{% url 'why' %}"> Why?</a> </li>
-                                            <li> <a href="{% url 'cont' %}">Contact us</a> </li>
+                                            <li> <a href="{ % 'proPage' %}"> Profile</a> </li>
+                                            <li> <a href="{% url 'regRec'"> Receipts</a> </li>
+                                             <li> <a href="{% url 'custAbout' %}">About us</a> </li>
+                                        <li> <a href="{% url 'custWhy' %}"> Why?</a> </li>
+                                        <li> <a href="{% url 'custCont' %}">Contact us</a> </li>
+                                        <li> <a href="{% url 'login' %}">Login </a> </li>
                                             <hr>
                                             <li> <a href="#" class="logout"> Log Out </a></li>
                                         </ul></li>

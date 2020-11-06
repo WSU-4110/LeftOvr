@@ -210,7 +210,7 @@ body {
 </style>
 
 </head>
-<header>
+    <header>
         <!-- header inner -->
         <div class="header">
             <div class="container">
@@ -222,18 +222,42 @@ body {
                             </div>
                         </div>
                     </div>
+                    <i class="fa fa-bars"> </i>
                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
                         <div class="menu-area">
                             <div class="limit-box">
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
-                                        <li class="active"> <a href="{% url 'index' %}">Home</a> </li>
-                                        <li> <a href="{% url 'custAbout' %}">About us</a> </li>
-                                        <li> <a href="{% url 'custWhy' %}"> Why?</a> </li>
-                                        <li> <a href="{% url 'custCont' %}">Contact us</a> </li>
-                                        <li> <a href="{% url 'login' %}">Login </a> </li>
-                                        <li class="mean-last"> <a href="#"><img src="{% static 'images/search_icon.png' %}" alt="#" /></a> </li>
-                                        <li class="mean-last"> <a href="#"><img src="{% static 'images/top-icon.png' %}" alt="#" /></a> </li>
+                                        <li class="menu-last"> <a href= "#"> My Account</a>
+                                            <ul>
+                                            <li> <a href="{% url 'proPage' %}"> Profile</a> </li>
+                                            <li> <a href="{% url 'pastRec' %}"> Receipts</a> </li>
+                                            <li> <a href="{% url 'custCont' %}">Contact us</a> </li>
+                                            <li> <a href="{% url 'custWhy' %}"> Why?</a> </li>
+                                            <li> <a href="{% url 'custAbout' %}">About US</a> </li>
+                                            <hr>
+                                            <li> <a href="#" class="logout"> Log Out </a></li>
+                                        </ul>
+                                        </li>
+                                        <li class="search-icon">
+                                            <form class="search">
+                                           <input type="text" class="s-input" placeholder="Search for restaurants..........." required>
+                                          </form>
+
+                                        </li>
+                                        <li class = "icon"> <a href="#search-icon">
+                                            <img src="{% static 'images/search_icon.png' %}" class="icon"></a>
+</li>
+                                        <li class="mean-last"> <a href="#"><img src="{% static 'images/top-icon.png' %}" alt="#" /></a>
+                                         <ul>
+                                            <li> <a href="{% url 'proPage' %}"> Profile</a> </li>
+                                            <li> <a href="{% url 'pastRec' %}"> Receipts</a> </li>
+                                            <li> <a href="{% url 'custCont' %}">Contact us</a> </li>
+                                            <li> <a href="{% url 'custWhy' %}"> Why?</a> </li>
+                                            <li> <a href="{% url 'custAbout' %}">About US</a> </li>
+                                            <hr>
+                                            <li> <a href="#" class="logout"> Log Out </a></li>
+                                        </ul>
                                     </ul>
                                 </nav>
                             </div>
