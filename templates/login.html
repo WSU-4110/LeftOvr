@@ -125,17 +125,13 @@ a {
     <p>Login invalid, Try again!</p>
     {% endif %}
 
-<form action="/actio/" method="post">
+<form method="post">
         {% csrf_token %}
   <div class="container">
     <h1>Log in</h1>
         <hr>
-      <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
+      {{ form.as_p }}
     <button type="submit" class="loginbtn">Login</button>
   </div>
 

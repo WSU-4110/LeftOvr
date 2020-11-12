@@ -32,8 +32,8 @@ urlpatterns = [
     path('restReg', views.restReg, name='restReg'),
     path('sendMes', views.sendMes, name='sendMes'),
     path('wh', views.wh, name='why'),
-    path('logI', views.logI, name='login'),
-    path('action/', views.actionC, name='actionC'),
+    path('login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
+    path('logout/', auth_views.LogoutView.as_view(template_name='logout.html'), name='logout'),
     path('act/', views.actionR, name='actionR'),
     path('acti/', views.actionCH, name='actionCH'),
     path('new/', views.actionRH, name='actionRH'),
@@ -48,6 +48,8 @@ urlpatterns = [
     path('custCont', views.custCont, name='custCont'),
     path('custWhy', views.custWhy, name='custWhy'),
     path('regRec', views.regRec, name='regRec'),
+
+    path('register/', views.register, name='register'),
 
 
    path('password-reset/',

@@ -47,7 +47,11 @@
                                         <li> <a href="{% url 'about' %}">About us</a> </li>
                                         <li> <a href="{% url 'why' %}"> Why?</a> </li>
                                         <li> <a href="{% url 'cont' %}">Contact us</a> </li>
+                                        {% if user.is_authenticated %}
+                                        <li>  <a href="{% url 'logout' %}">Logout</a> </li>
+                                        {% else %}
                                         <li> <a href="{% url 'login' %}">Login </a> </li>
+                                        {% endif %}
                                         <li class="mean-last"> <a href="#" onclick="myFunction()"><img src="{% static 'images/search_icon.png' %}" alt="#" /></a> </li>
                                         <script>
 function myFunction() {
@@ -82,7 +86,7 @@ function myFunction() {
                             <span>We can help you connect to restaurants.</span>
                             <p>Our platform will help you get free food from restaurants. <br>The food that will be provided by the restaurant will be leftover food.<br> This is to reduce food waste.<br>Choose you role and sign up to our platform. If you are interested.</p>
 
-                            <div class="button_section"> <a class="main_bt" href="{% url 'custReg' %}">Customer</a> <a class="main_bt" href="{% url 'restReg' %}">Restaurant</a> </div>
+                            <div class="button_section"> <a class="main_bt" href="{% url 'register' %}">Customer</a> <a class="main_bt" href="{% url 'restReg' %}">Restaurant</a> </div>
                         </div>
                     </div>
                 </div>

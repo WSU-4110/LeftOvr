@@ -23,7 +23,7 @@ class Customer(models.Model):
     is_staff        =models.BooleanField(default=False)
     is_superuser    =models.BooleanField(default=False)
 
-    profile_image   =models.ImageField(max_length=255, upload_to=profile_Image, null=True, blank=True, default=default_profile_image)
+    #profile_image   =models.ImageField(max_length=255, upload_to=profile_Image, null=True, blank=True, default=default_profile_image)
     hide_email      =models.BooleanField(default=True)
 
     def __str__(self):
