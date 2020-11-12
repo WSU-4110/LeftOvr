@@ -127,26 +127,94 @@ $("#imageUpload").change(function(){
         </div>
         <!-- end header inner -->
     </header>
+<style>
+    body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: #000;
+}
+
+user-profile .card {
+  border-radius: 10px;
+}
+
+.user-profile .card .card-header .profile_img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px auto;
+  border: 10px solid #ccc;
+  border-radius: 50%;
+}
+
+.user-profile .card h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.user-profile .card p {
+  font-size: 16px;
+  color: #000;
+}
+
+user-profile .table th,
+.user-profile .table td {
+  font-size: 14px;
+  padding: 5px 10px;
+  color: #000;
+}
+</style>
 <body>
-<h1 style="align: center"> Your Profile</h1>
+<!-- user Profile -->
+<div class="user-profile py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card shadow-sm">
+          <div class="card-header bg-transparent text-center">
+            <img class="profile_img" src="https://placeimg.com/640/480/arch/any" alt="">
+            <h3>John Doe</h3>
+          </div>
+          <div class="card-body">
+            <p class="mb-0"><strong class="pr-1">User ID:</strong>321000001</p>
 
+          </div>
+        </div>
+      <div class="col-lg-8">
+        <div class="card shadow-sm">
+          <div class="card-header bg-transparent border-0">
+            <h3 class="mb-0"><i class="far fa-clone pr-1"></i>Profile Information</h3>
+          </div>
+          <div class="card-body pt-0">
+            <table class="table table-bordered">
+              <tr>
+                <th width="30%">Email</th>
+                <td width="2%">:</td>
+                <td> johndoe@gmail.com</td>
+              </tr>
+              <tr>
+                <th width="30%">Username	</th>
+                <td width="2%">:</td>
+                <td>John_doe</td>
+              </tr>
+              <tr>
+                <th width="30%">Password:</th>
+                <td width="2%">:</td>
+                <td>*******************</td>
+              </tr>
 
-<div id="profile-container">
-   <script src="{% static 'js/https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js' %}"></script>
-   <img id="profileImage" src="{% static 'images/defaultprofile.png' %}" />
+            </table>
+            <div> If you want to change your password, <a href="#">click here. </a><div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<input id="imageUpload" type="file"
-       name="profile_photo" placeholder="Photo" required="" capture>
-
-<div class="info">
-<h1 style="background-color: #CF9695"> Your Info</h1>
-<p> Email: </p>
-<p> username: </p>
-   <p> ID Number: ***-****-1234</p>
-<p> password: ************ </p>
-<p> <a href="#"> Change Password</a> </p>
-</div>
+  </body>
+<!-- /user Profile -->
 
  <!-- footer -->
     <footer>
@@ -244,5 +312,5 @@ $("#imageUpload").change(function(){
     <!-- Main JS-->
     <script src="{% static 'js/global.js' %}"></script>
 
-</body>
+
 </html>
