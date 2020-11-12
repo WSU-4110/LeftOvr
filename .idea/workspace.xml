@@ -30,7 +30,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="why page added with customer navigation bar">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_5_20,_3_27_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_5_20__3_27_PM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +97,9 @@
       <workItem from="1604370242588" duration="4054000" />
       <workItem from="1604541497216" duration="5827000" />
       <workItem from="1604964566678" duration="593000" />
-      <workItem from="1605197754763" duration="4738000" />
+      <workItem from="1605197754763" duration="4930000" />
+      <workItem from="1605205780261" duration="257000" />
+      <workItem from="1605219417624" duration="1118000" />
     </task>
     <task id="LOCAL-00001" summary="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later">
       <created>1602776938962</created>
@@ -236,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605202749829</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Decorator Pattern @index.html --Fahmida_Homework4">
+      <created>1605203666610</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1605203666610</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,7 +299,8 @@
     <MESSAGE value="Changed header. Should be better looking now." />
     <MESSAGE value="changed user profile" />
     <MESSAGE value="fixed - user profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed - user profile" />
+    <MESSAGE value="Decorator Pattern @index.html --Fahmida_Homework4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Decorator Pattern @index.html --Fahmida_Homework4" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="90" key="#Inspections" timestamp="1602750392190">
