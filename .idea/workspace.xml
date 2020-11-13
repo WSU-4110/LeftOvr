@@ -29,12 +29,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="HW4--Fahmida C. Composite.">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_5_20,_7_27_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_5_20__7_27_PM__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="HW4--Fahmida--- MTV">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeftOvr/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeftOvr/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +98,8 @@
       <workItem from="1605205780261" duration="257000" />
       <workItem from="1605219417624" duration="1618000" />
       <workItem from="1605233411531" duration="350000" />
-      <workItem from="1605235692001" duration="1007000" />
+      <workItem from="1605235692001" duration="1078000" />
+      <workItem from="1605237308085" duration="269000" />
     </task>
     <task id="LOCAL-00001" summary="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later">
       <created>1602776938962</created>
@@ -258,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605222141790</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="HW4--Fahmida--- MTV">
+      <created>1605237233757</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1605237233758</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +315,8 @@
     <MESSAGE value="fixed - user profile" />
     <MESSAGE value="Decorator Pattern @index.html --Fahmida_Homework4" />
     <MESSAGE value="HW4--Fahmida C. Composite." />
-    <option name="LAST_COMMIT_MESSAGE" value="HW4--Fahmida C. Composite." />
+    <MESSAGE value="HW4--Fahmida--- MTV" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW4--Fahmida--- MTV" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="90" key="#Inspections" timestamp="1602750392190">
