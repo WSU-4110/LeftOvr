@@ -198,7 +198,7 @@ a {
         <div class="card shadow-sm">
           <div class="card-header bg-transparent text-center">
             <img class="profile_img" src="https://placeimg.com/640/480/arch/any" alt="">
-            <h3>John Doe</h3>
+            <h3>{{ user.username }} </h3>
           </div>
           <div class="card-body">
             <p class="mb-0"><strong class="pr-1">User ID:</strong>321000001</p>
@@ -217,7 +217,7 @@ a {
               <tr>
                 <th width="30%">Email</th>
                 <td width="2%">:</td>
-                <td>JohnDoe@gmail.com</td>
+                <td>{{ user.email }}</td>
               </tr>
               <tr>
                 <th width="30%">Primary Location:	</th>
