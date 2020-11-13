@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Used Decorator Pattern ---Fahmida-->
+
 <head>
-    <!-- basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- mobile metas -->
@@ -24,7 +23,7 @@
       <script src="{% static 'js/https://oss.maxcdn.com/respond/1.4.2/respond.min.js' %}"></script><![endif]-->
 </head>
 <!-- body -->
-<!-- body component-->
+
 <body class="main-layout">
 <!-- header component-->
     <header>
@@ -34,7 +33,7 @@
                 <div class="row">
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                         <div class="full">
-                            <!-- logo leaf-->
+                            <!-- logo-->
                             <div class="center-desk">
                                 <div class="logo"> <a href="{% url 'index' %}"><img src="{% static 'images/logo4.jpg' %}" alt="#"></a> </div>
                             </div>
@@ -47,16 +46,16 @@
                                     <ul class="menu-area-main">
 
                                         <li class="active"> <a href="{% url 'index' %}">Home</a> </li>
-                                        <!-- about leaf -->
+                                        <!-- about -->
 
                                         <li> <a href="{% url 'about' %}">About us</a> </li>
-                                        <!-- why leaf -->
+                                        <!-- why -->
 
                                         <li> <a href="{% url 'why' %}"> Why?</a> </li>
-                                        <!-- contact leaf -->
+                                        <!-- contact -->
                                         <li> <a href="{% url 'cont' %}">Contact us</a> </li>
                                         {% if user.is_authenticated %}
-                                        <!-- login leaf -->
+                                        <!-- login -->
 
                                         <li>  <a href="{% url 'logout' %}">Logout</a> </li>
                                         <li>  <a href="{% url 'proPage' %}">Profile</a></li>
@@ -107,7 +106,7 @@
             </div>
         </div>
     </section>
-    <!-- about component -->
+
     <div class="about">
         <div class="container">
             <div class="row">
@@ -133,7 +132,7 @@
 
 
     <!-- end about -->
-    <!-- why component -->
+
     <div class="Coach">
         <div class="container">
             <div class="row">
@@ -182,7 +181,7 @@
     </div>
     <!-- end Currency -->    
 <hr> 
-<!-- contact component -->
+<!-- contact -->
 
     <div class="Contact">
         <div class="container">
@@ -200,7 +199,7 @@
     </div>
             
 
-    <!-- footer component-->
+    <!-- footer -->
     <footer>
         <div class="footer">
             <div class="container">
@@ -211,7 +210,7 @@
                         </div>
 
                     </div>
-                    <!-- location leaf -->
+                    <!-- location  -->
 
                 </div>
                 <div class="row pdn-top-30">
@@ -222,21 +221,21 @@
 
                         </ul>
                     </div>
-                    <!-- telephon leaf -->
+                    <!-- telephone -->
 
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                         <ul class="location_icon">
                             <li> <img src="{% static 'icon/tellephone.png' %}"><span>(313)-(00)-(0000)<br>+0000000000</span></li>
                         </ul>
                     </div>
-                    <!-- email leaf -->
+                    <!-- email -->
 
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                         <ul class="location_icon">
                             <li> <img src="% static 'icon/email.png' %}"><span>LeftOvrDemo@gmail.com<br>LeftOvrDemo@gmail.com</span></li>
                         </ul>
                     </div>
-                    <!-- social media leaf -->
+                    <!-- social media -->
 
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                         <ul class="location_icon">
@@ -249,7 +248,7 @@
                 </div>
             </div>
         </div>
-        <!-- copyright leaf -->
+        <!-- copyright-->
         <div class="copyright">
             <div class="container">
                 <p>Copyright 2020 All Right Reserved By <a href="#">LeftOvr Inc.</a></p>
