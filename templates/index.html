@@ -24,8 +24,9 @@
       <script src="{% static 'js/https://oss.maxcdn.com/respond/1.4.2/respond.min.js' %}"></script><![endif]-->
 </head>
 <!-- body -->
-
+<!-- body component-->
 <body class="main-layout">
+<!-- header component-->
     <header>
         <!-- header inner -->
         <div class="header">
@@ -33,6 +34,7 @@
                 <div class="row">
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                         <div class="full">
+                            <!-- logo leaf-->
                             <div class="center-desk">
                                 <div class="logo"> <a href="{% url 'index' %}"><img src="{% static 'images/logo4.jpg' %}" alt="#"></a> </div>
                             </div>
@@ -43,21 +45,30 @@
                             <div class="limit-box">
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
+
                                         <li class="active"> <a href="{% url 'index' %}">Home</a> </li>
+                                        <!-- about leaf -->
+
                                         <li> <a href="{% url 'about' %}">About us</a> </li>
+                                        <!-- why leaf -->
+
                                         <li> <a href="{% url 'why' %}"> Why?</a> </li>
+                                        <!-- contact leaf -->
                                         <li> <a href="{% url 'cont' %}">Contact us</a> </li>
                                         {% if user.is_authenticated %}
+                                        <!-- login leaf -->
+
                                         <li>  <a href="{% url 'logout' %}">Logout</a> </li>
                                         {% else %}
                                         <li> <a href="{% url 'login' %}">Login </a> </li>
                                         {% endif %}
-                                        <li class="mean-last"> <a href="#" onclick="myFunction()"><img src="{% static 'images/search_icon.png' %}" alt="#" /></a> </li>
+                                        <li class="mean-last"> <a href="#" onclick="myFunction()">
+                                            <img src="{% static 'images/search_icon.png' %}" alt="#" /></a> </li>
                                         <script>
-function myFunction() {
-  alert("OOPS. Please, Log in to search the website! ");
-}
-</script>
+                                            function myFunction() {
+                                                alert("OOPS. Please, Log in to search the website! ");
+                                            }
+                                        </script>
                                     </ul>
                                 </nav>
                             </div>
@@ -85,6 +96,7 @@ function myFunction() {
                             <h1>Hey, There! <br><strong class="cur">Welcome to LeftOvr.</strong></h1>
                             <span>We can help you connect to restaurants.</span>
                             <p>Our platform will help you get free food from restaurants. <br>The food that will be provided by the restaurant will be leftover food.<br> This is to reduce food waste.<br>Choose you role and sign up to our platform. If you are interested.</p>
+                                                                    <!-- button  leaf  restaurant & customer-->
 
                             <div class="button_section"> <a class="main_bt" href="{% url 'register' %}">Customer</a> <a class="main_bt" href="{% url 'restReg' %}">Restaurant</a> </div>
                         </div>
@@ -93,7 +105,7 @@ function myFunction() {
             </div>
         </div>
     </section>
-    <!-- about -->
+    <!-- about component -->
     <div class="about">
         <div class="container">
             <div class="row">
@@ -119,7 +131,7 @@ function myFunction() {
 
 
     <!-- end about -->
-    <!-- Coach -->
+    <!-- why component -->
     <div class="Coach">
         <div class="container">
             <div class="row">
@@ -168,6 +180,7 @@ function myFunction() {
     </div>
     <!-- end Currency -->    
 <hr> 
+<!-- contact component -->
 
     <div class="Contact">
         <div class="container">
@@ -185,7 +198,7 @@ function myFunction() {
     </div>
             
 
-    <!-- footer -->
+    <!-- footer component-->
     <footer>
         <div class="footer">
             <div class="container">
@@ -196,7 +209,7 @@ function myFunction() {
                         </div>
 
                     </div>
-
+                    <!-- location leaf -->
 
                 </div>
                 <div class="row pdn-top-30">
@@ -207,16 +220,22 @@ function myFunction() {
 
                         </ul>
                     </div>
+                    <!-- telephon leaf -->
+
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                         <ul class="location_icon">
                             <li> <img src="{% static 'icon/tellephone.png' %}"><span>(313)-(00)-(0000)<br>+0000000000</span></li>
                         </ul>
                     </div>
+                    <!-- email leaf -->
+
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                         <ul class="location_icon">
                             <li> <img src="% static 'icon/email.png' %}"><span>LeftOvrDemo@gmail.com<br>LeftOvrDemo@gmail.com</span></li>
                         </ul>
                     </div>
+                    <!-- social media leaf -->
+
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                         <ul class="location_icon">
                             <li> <a href="#"><img src="{% static 'icon/facebook.png' %}"></a></li>
@@ -228,6 +247,7 @@ function myFunction() {
                 </div>
             </div>
         </div>
+        <!-- copyright leaf -->
         <div class="copyright">
             <div class="container">
                 <p>Copyright 2020 All Right Reserved By <a href="#">LeftOvr Inc.</a></p>
