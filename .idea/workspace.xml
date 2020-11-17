@@ -29,18 +29,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="HW4--Fahmida--- MTV">
-      <change afterPath="$PROJECT_DIR$/static/images/pizza.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/pizza.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_20,_4_10_PM_[Default_Changelist]1/logo4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_20,_4_10_PM_[Default_Changelist]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_20__4_10_PM__Default_Changelist_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcss/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcss/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="changed image and look of home page" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +99,7 @@
       <workItem from="1605235692001" duration="1078000" />
       <workItem from="1605237308085" duration="414000" />
       <workItem from="1605239351017" duration="650000" />
-      <workItem from="1605637267100" duration="3925000" />
+      <workItem from="1605637267100" duration="4289000" />
     </task>
     <task id="LOCAL-00001" summary="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later">
       <created>1602776938962</created>
@@ -280,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605237807969</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="changed image and look of home page">
+      <created>1605642175853</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1605642175853</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -335,7 +331,8 @@
     <MESSAGE value="HW4--Fahmida C. Composite." />
     <MESSAGE value="HW4--Fahmida--- MTV" />
     <MESSAGE value="Checking" />
-    <option name="LAST_COMMIT_MESSAGE" value="Checking" />
+    <MESSAGE value="changed image and look of home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed image and look of home page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="90" key="#Inspections" timestamp="1602750392190">
