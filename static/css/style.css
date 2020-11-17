@@ -187,16 +187,7 @@
      border-bottom: solid rgba(0, 0, 0, 0.07) 1px;
      margin-bottom: 25px;
 }
- .small_main_heading h2 {
-     padding: 2px 0 20px 0;
-     color: #CF9695;
-     font-weight: 400;
-     font-size: 28px;
-     background-image: url('../images/fevicon.png');
-     background-repeat: no-repeat;
-     padding-left: 55px;
-     letter-spacing: -0.5px;
-}
+
  .small_main_heading h2 strong {
      color: #38c8a8;
      font-weight: 600;
@@ -1329,23 +1320,23 @@ float: left;
  .banner-main .carousel-caption h1 {
     font-size: 76px;
      line-height: 80px;
-     color: #CF9695;
-     font-weight: bold;
+     color: white;
+     font-weight:bold;
 }
  .cur {
-    color: #ad2100;
+    color: #CF9695;
      font-weight: bold !important;
 }
  .banner-main .carousel-caption span {
-    font-size: 35px;
-     color: #2f2f2f;
+    font-size: 40px;
+     color: white;
      padding-bottom: 25px;
      display: inline-block;
 }
  .banner-main .carousel-caption p {
     font-size: 17px;
-     line-height: 30px;
-     color: #2f2f2f;
+     line-height: 35px;
+     color: white;
 }
  .carousel-indicators .active {
     background-color: #CF9695;
