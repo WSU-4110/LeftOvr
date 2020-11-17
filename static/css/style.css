@@ -1690,8 +1690,8 @@ backgroun-color: black;
 }
  .about-bg {
      background-color: #CF9695;
-     margin-bottom: 90px;
-}
+     margin-bottom: 0px;
+ }
  .about-bg .abouttitle h2 {
      color: #CF9695;
      text-transform: uppercase;
