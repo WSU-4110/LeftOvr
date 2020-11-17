@@ -9,6 +9,7 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm
 from django.contrib import messages
+from .decorators import unauthenticated_user, allowed_users
 
 
 def index(request):
@@ -59,6 +60,8 @@ def actionC(request):
 
     return render(request, "UploadProfileCust.html")
 
+@login_required
+@allowed_users(allowed_roles=['customer'])
 def proPage(request):
 
     return render(request, "sampleUserProfile.html")
@@ -136,6 +139,7 @@ def head(request):
 def regRec(request):
     return render(request, "receiptSample.html")
 
+@unauthenticated_user
 def register(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
