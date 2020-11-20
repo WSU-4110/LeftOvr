@@ -8,6 +8,9 @@ from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm
 from django.contrib import messages
 from .decorators import unauthenticated_user, allowed_users
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 
 def index(request):
@@ -59,7 +62,7 @@ def actionC(request):
     return render(request, "UploadProfileCust.html")
 
 @login_required
-@allowed_users(allowed_roles=['customer'])
+@allowed_users(allowed_roles=['customer', 'restaurant'])
 def proPage(request):
 
     return render(request, "sampleUserProfile.html")

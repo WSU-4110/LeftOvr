@@ -3,21 +3,11 @@ from django.contrib.auth.models import  AbstractUser
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 
+#def profile_pics(self):
+    #return f'profile_pics/{self.pk}/{"profile_pics.png"}'
 
-class profile(models.Model):
-    #user = models.OneToOneField(User, on_delete=models.CASCADE)
-    image = models.ImageField(default='default.jpg', upload_to='profile_pics')
-
-    def __str__(self):
-        return f'{self.user.username} Profile'
-
-    pass
-
-def profile_pics(self):
-    return f'profile_pics/{self.pk}/{"profile_pics.png"}'
-
-def default_profile_pics():
-    return "profile_pics/default-picture_0_0.png"
+#def default_profile_pics():
+    #return "profile_pics/default-picture_0_0.png"
 
 class User(AbstractUser):
     class Types(models.TextChoices):
@@ -30,6 +20,15 @@ class User(AbstractUser):
 
     def get_absolute_url(self):
         return reverse("users:detail", kwargs={"username": self.username})
+
+class profile(User):
+    #user = models.OneToOneField(User, on_delete=models.CASCADE)
+    image = models.ImageField(default='images/profile_pics/default-picture_0_0.png', upload_to='images/profile_pics')
+
+    def __str__(self):
+        return f'{self.username} Profile'
+
+    pass
 
 
 class CustomerManager(models.Manager):
@@ -53,8 +52,8 @@ class Customer(User):
             self.type = User.Types.Customer
         return super().save(*args, **kwargs)
 
-    def __str__(self):
-        return self.email
+    #def __str__(self):
+        #return self.email
 
     #def profile_image_fileName(self):
        # return str(self.profile_image)[str(self.profile_image).index(f'profile_images/{self.pk}/'):]
@@ -64,6 +63,7 @@ class CustomerMore(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     firstName = models.CharField(max_length=30)
     lastName = models.CharField(max_length=30)
+    password = models.CharField(max_length=30,null=True, unique=True)
     idNum = models.CharField(verbose_name="idNum", max_length=13)
     custAddress = models.CharField(max_length=90, null=True)
     profile = models.ForeignKey(profile, related_name="profi", on_delete=models.CASCADE)
@@ -93,9 +93,10 @@ class Restaurant(User):
     def save(self, *args, **kwargs):
         if not self.pk:
             self.type = User.Types.Restaurant
+        return super().save(*args, **kwargs)
 
-    def __str__(self):
-        return self.email
+    #def __str__(self):
+       # return self.email
 
 
 class ContactUs(models.Model):
@@ -106,6 +107,6 @@ class ContactUs(models.Model):
     message = models.TextField(blank=True, null=True)
 
     def __str__(self):
-        return self.name + ' ' + self.email + ' ' + self.message
+        return self.message
 
 
