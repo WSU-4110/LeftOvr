@@ -2,8 +2,6 @@
 from django.shortcuts import render, redirect
 from .models import Customer
 from .models import Restaurant
-from .models import Meals
-from .models import LocationArea
 from .models import ContactUs
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
@@ -128,8 +126,6 @@ def actionRI(request):
     di = request.POST.get("dishnum")
     dis = request.POST.get("dishes")
 
-    lo = Meals(mealType=d, mealAvail=di)
-    lo.save()
 
     return render(request, "AddRemoveMenu.html")
 
