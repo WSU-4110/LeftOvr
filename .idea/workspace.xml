@@ -29,10 +29,15 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="why is every file duplicated? smh">
+    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="testing">
+      <change afterPath="$PROJECT_DIR$/htmlcss/migrations/0002_auto_20201120_1251.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcss/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcss/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcss/migrations/0002_customermore_password.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcss/migrations/0003_auto_20201120_1220.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcss/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcss/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/profile_pics/default-picture_0_0.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +52,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="c970b5f5-c21e-4659-8421-87337a4e8bc4" />
@@ -65,14 +75,37 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manage.py" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/images" />
       <recent name="C:\Users\JohnW\Desktop\LeftOvr\statics\css" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="LeftOvr" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -287,7 +320,28 @@
       <option name="project" value="LOCAL" />
       <updated>1605642400349</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="testing">
+      <created>1605889150347</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1605889150347</updated>
+    </task>
+    <task id="LOCAL-00028" summary="testing">
+      <created>1605891899932</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1605891899932</updated>
+    </task>
+    <task id="LOCAL-00029" summary="testing">
+      <created>1605893756648</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1605893756648</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +373,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later" />
     <MESSAGE value="changed statics to static(file name). added alt=&quot;&quot; to image src lines." />
     <MESSAGE value="added a default image for user profile. and made small change to database" />
     <MESSAGE value="Trying to create page header after login-customer" />
@@ -344,7 +397,8 @@
     <MESSAGE value="Checking" />
     <MESSAGE value="changed image and look of home page" />
     <MESSAGE value="why is every file duplicated? smh" />
-    <option name="LAST_COMMIT_MESSAGE" value="why is every file duplicated? smh" />
+    <MESSAGE value="testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="90" key="#Inspections" timestamp="1602750392190">
@@ -355,14 +409,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="508" y="236" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1602728241126" />
+    <state x="223" y="67" width="1089" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605888315759">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" width="1089" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605888315759" />
     <state x="371" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604477184028">
       <screen x="0" y="23" width="1440" height="786" />
     </state>
     <state x="371" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.786@0.23.1440.786" timestamp="1604477184028" />
-    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1602766703699">
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1605888278715">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602766703699" />
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605888278715" />
     <state x="647" y="310" key="Github.ShareDialog" timestamp="1602766724587">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -375,14 +433,14 @@
       <screen x="0" y="23" width="1440" height="781" />
     </state>
     <state x="144" y="90" key="MergeDialog/0.23.1440.781@0.23.1440.781" timestamp="1604608093337" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1602729837041">
+    <state x="277" y="57" key="SettingsEditor" timestamp="1605882890117">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602729837041" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602795059882">
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605882890117" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1605893758598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602795059882" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605893758598" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1602795448546">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

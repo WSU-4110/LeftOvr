@@ -2,14 +2,15 @@
 from django.shortcuts import render, redirect
 from .models import Customer
 from .models import Restaurant
-from .models import Meals
-from .models import LocationArea
 from .models import ContactUs
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm
 from django.contrib import messages
 from .decorators import unauthenticated_user, allowed_users
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 
 def index(request):
@@ -128,8 +129,6 @@ def actionRI(request):
     di = request.POST.get("dishnum")
     dis = request.POST.get("dishes")
 
-    lo = Meals(mealType=d, mealAvail=di)
-    lo.save()
 
     return render(request, "AddRemoveMenu.html")
 
