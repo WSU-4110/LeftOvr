@@ -62,7 +62,7 @@ def actionC(request):
     return render(request, "UploadProfileCust.html")
 
 @login_required
-@allowed_users(allowed_roles=['customer', 'restaurant'])
+@allowed_users(allowed_roles=['customer'])
 def proPage(request):
 
     return render(request, "sampleUserProfile.html")

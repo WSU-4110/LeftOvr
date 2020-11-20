@@ -3,12 +3,6 @@ from django.contrib.auth.models import  AbstractUser
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 
-#def profile_pics(self):
-    #return f'profile_pics/{self.pk}/{"profile_pics.png"}'
-
-#def default_profile_pics():
-    #return "profile_pics/default-picture_0_0.png"
-
 class User(AbstractUser):
     class Types(models.TextChoices):
         Customer = "CUSTOMER", "Customer"
@@ -20,15 +14,6 @@ class User(AbstractUser):
 
     def get_absolute_url(self):
         return reverse("users:detail", kwargs={"username": self.username})
-
-class profile(User):
-    #user = models.OneToOneField(User, on_delete=models.CASCADE)
-    image = models.ImageField(default='images/profile_pics/default-picture_0_0.png', upload_to='images/profile_pics')
-
-    def __str__(self):
-        return f'{self.username} Profile'
-
-    pass
 
 
 class CustomerManager(models.Manager):
@@ -44,19 +29,22 @@ class Customer(User):
     def more(self):
         return self.customermore
 
-    #profile_pic = models.ImageField(max_length=255, upload_to=profile_pics, null=True, blank=True, default=default_profile_pics)
-    #hide_email = models.BooleanField(default=True)
+    def profile_pics(self):
+        return f'profile_pics/{self.pk}/{"profile_pics.png"}'
+
+    def default_profile_pics(self):
+        return "profile_pics/default-picture_0_0.png"
 
     def save(self, *args, **kwargs):
         if not self.pk:
             self.type = User.Types.Customer
         return super().save(*args, **kwargs)
 
-    #def __str__(self):
-        #return self.email
+    def __str__(self):
+        return self.email
 
-    #def profile_image_fileName(self):
-       # return str(self.profile_image)[str(self.profile_image).index(f'profile_images/{self.pk}/'):]
+    def profile_image_fileName(self):
+       return str(self.profile_pics)[str(self.profile_pics).index(f'profile_pics/{self.pk}/'):]
 
 
 class CustomerMore(models.Model):
@@ -66,7 +54,8 @@ class CustomerMore(models.Model):
     password = models.CharField(max_length=30,null=True, unique=True)
     idNum = models.CharField(verbose_name="idNum", max_length=13)
     custAddress = models.CharField(max_length=90, null=True)
-    profile = models.ForeignKey(profile, related_name="profi", on_delete=models.CASCADE)
+    profile_pic = models.ImageField(null=True, blank=True, default="images/default-picture_0_0.png")
+    hide_email = models.BooleanField(default=True)
 
 
 class RestaurantManager(models.Manager):
@@ -79,7 +68,8 @@ class RestaurantMore(models.Model):
     busName = models.CharField(max_length=500)
     busAddress = models.CharField(max_length=500)
     einNum = models.CharField(max_length=9)
-    profile = models.ForeignKey(profile,related_name="profil", on_delete=models.CASCADE)
+    profile_pic = models.ImageField(null=True, blank=True, default="images/default-picture_0_0.png")
+    hide_email = models.BooleanField(default=True)
 
 class Restaurant(User):
     objects = RestaurantManager
@@ -90,13 +80,22 @@ class Restaurant(User):
     def more(self):
         return self.restaurantmore
 
+    def profile_pics(self):
+        return f'profile_pics/{self.pk}/{"profile_pics.png"}'
+
+    def default_profile_pics(self):
+        return "profile_pics/default-picture_0_0.png"
+
     def save(self, *args, **kwargs):
         if not self.pk:
             self.type = User.Types.Restaurant
         return super().save(*args, **kwargs)
 
-    #def __str__(self):
-       # return self.email
+    def profile_image_fileName(self):
+       return str(self.profile_pics)[str(self.profile_pics).index(f'profile_pics/{self.pk}/'):]
+
+    def __str__(self):
+        return self.email
 
 
 class ContactUs(models.Model):
