@@ -29,8 +29,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="Dominos review">
-      <change beforePath="$PROJECT_DIR$/templates/BaboReview.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BaboReview.html" afterDir="false" />
+    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="Leo's review">
+      <change afterPath="$PROJECT_DIR$/templates/afterReview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +140,7 @@
       <workItem from="1605237308085" duration="414000" />
       <workItem from="1605239351017" duration="650000" />
       <workItem from="1605637267100" duration="7039000" />
-      <workItem from="1606000089343" duration="6571000" />
+      <workItem from="1606000089343" duration="7360000" />
     </task>
     <task id="LOCAL-00001" summary="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later">
       <created>1602776938962</created>
@@ -372,7 +373,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606007104365</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Babo review">
+      <created>1606007385834</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1606007385834</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Leo's review">
+      <created>1606007509485</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1606007509485</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,8 +419,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Deleted all repeated files. checked page after looks fine." />
-    <MESSAGE value="put some code TimerSampleCode.html that can be used for the internal timer" />
     <MESSAGE value="added creator information in about us" />
     <MESSAGE value="added better images to developer information" />
     <MESSAGE value="created sampleUserProfile.html for displaying user information" />
@@ -429,7 +442,9 @@
     <MESSAGE value="testing" />
     <MESSAGE value="Chipotle review" />
     <MESSAGE value="Dominos review" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dominos review" />
+    <MESSAGE value="Babo review" />
+    <MESSAGE value="Leo's review" />
+    <option name="LAST_COMMIT_MESSAGE" value="Leo's review" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="90" key="#Inspections" timestamp="1602750392190">
@@ -468,18 +483,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605882890117" />
-    <state x="452" y="146" key="Vcs.Push.Dialog.v2" timestamp="1606007114305">
+    <state x="452" y="146" key="Vcs.Push.Dialog.v2" timestamp="1606007514914">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="452" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606007114305" />
+    <state x="452" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606007514914" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1602795448546">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1602795448546" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606007079506">
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606007494063">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1606007079506" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1606007494063" />
     <state x="549" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.781@0.23.1440.781" timestamp="1605222212630" />
     <state x="549" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.786@0.23.1440.786" timestamp="1605642346847" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602774015163">
