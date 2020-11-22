@@ -11,7 +11,7 @@
     <!-- site metas -->
     <title>Home</title>
 
-    <meta name="author" content="Fahmida">
+    <meta name="author" content="Fahmida&Susanna">
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 
@@ -143,8 +143,12 @@ a {
                                         </li>
                                         <li class="search-icon">
                                             <form class="search">
-                                           <input type="text" class="s-input" placeholder="Search for restaurants..........." required>
+
+                                                <label for="zip"><b>ZIP Code</b></label>
+                                                <input type="text" placeholder="Enter zip code" name="zip" id="zip" pattern= pattern="[0-9]{5}" required>
                                           </form>
+
+
 
                                         </li>
                                         <li class = "icon"> <a href="#search-icon">
