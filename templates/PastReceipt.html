@@ -207,6 +207,66 @@ body {
   position: relative;
   top: 2px;
 }
+
+.chipotlebtn {
+  background-color: #CF9695;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.chipotlebtn:hover {
+  opacity: 1;
+}
+
+.dominosbtn {
+  background-color: #CF9695;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.dominosbtn:hover {
+  opacity: 1;
+}
+
+.leosbtn {
+  background-color: #CF9695;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.leosbtn:hover {
+  opacity: 1;
+}
+
+.babobtn {
+  background-color: #CF9695;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.babobtn:hover {
+  opacity: 1;
+}
 </style>
 
 </head>
@@ -287,6 +347,9 @@ body {
 
         <li class="guiz-awards-time">pick-up- 8:02pm</li>
       </ul>
+
+    <div>Pick-up within <span id="timer"> 30:00<span> minutes!</div>
+
   <div class="quiz-window-header">
 
     <div class="quiz-window-title">Past Receipts</div>
@@ -301,6 +364,7 @@ body {
         </li>
 
         <li class="guiz-awards-time">picked up</li>
+          <button type="submit" class="chipotlebtn">Review</button>
       </ul>
 <ul class="guiz-awards-row guiz-awards-row-even">
         <li class="guiz-awards-star"><span class="star goldstar"></span></li>
@@ -309,35 +373,39 @@ body {
         </li>
 
         <li class="guiz-awards-time">picked up</li>
+    <button type="submit" class="dominosbtn">Review</button>
       </ul><ul class="guiz-awards-row guiz-awards-row-even">
         <li class="guiz-awards-star"><span class="star goldstar"></span></li>
         <li class="guiz-awards-title" onclick="myFunction()"><a href> Red Lobster</a>
           <div class="guiz-awards-subtitle">11/28/2020</div>
         </li>
-
         <li class="guiz-awards-time">missed pick-up</li>
+
       </ul><ul class="guiz-awards-row guiz-awards-row-even">
         <li class="guiz-awards-star"><span class="star silverstar"></span></li>
         <li class="guiz-awards-title" onclick="myFunction()"><a href> Babo</a>
           <div class="guiz-awards-subtitle">11/28/2020</div>
         </li>
-
         <li class="guiz-awards-time">cancelled</li>
+        <button type="submit" class="babobtn">Review</button>
+
       </ul><ul class="guiz-awards-row guiz-awards-row-even">
         <li class="guiz-awards-star"><span class="star rhodiumstar"></span></li>
         <li class="guiz-awards-title" onclick="myFunction()"><a href> Leo's Coney Island</a>
           <div class="guiz-awards-subtitle">11/28/2020</div>
         </li>
+        <li class="guiz-awards-time">picked up</li>
 
-        <li class="guiz-awards-time">cancelled</li>
+        <button type="submit" class="leosbtn">Review</button>
       </ul>
+
 <ul class="guiz-awards-row guiz-awards-row-even">
         <li class="guiz-awards-star"><span class="star bronzestar"></span></li>
         <li class="guiz-awards-title" onclick="myFunction()"><a href> Dominos</a>
           <div class="guiz-awards-subtitle">11/28/2020</div>
         </li>
+        <li class="guiz-awards-time">cancelled</li>
 
-        <li class="guiz-awards-time">picked up</li>
       </ul>
       
     </div>
