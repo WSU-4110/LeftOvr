@@ -47,7 +47,14 @@
                                         <li> <a href="{% url 'about' %}">About us</a> </li>
                                         <li> <a href="{% url 'why' %}"> Why?</a> </li>
                                         <li> <a href="{% url 'cont' %}">Contact us</a> </li>
+                                        {% if user.is_authenticated %}
+                                        <!-- login -->
+
+                                        <li>  <a href="{% url 'logout' %}">Logout</a> </li>
+                                        <li>  <a href="{% url 'proPage' %}">Profile</a></li>
+                                        {% else %}
                                         <li> <a href="{% url 'login' %}">Login </a> </li>
+                                        {% endif %}
                                         <li class="mean-last"> <a href="#"><img src="{% static 'images/search_icon.png' %}" alt="#" /></a> </li>
                                         <li class="mean-last"> <a href="#"><img src="{% static 'images/top-icon.png' %}" alt="#" /></a> </li>
                                     </ul>
@@ -62,7 +69,7 @@
     </header>
 <div class="message" style="width:800px; margin:0 auto; text-align: center;">
 <img src="{% static 'images/send.jpg' %}" alt="#" width="600" height="400">
-<h2 style="color: #CF9695;"> Thank you for Contacting LeftOvr</h2> 
+<h2 style="color: #CF9695;"> Thank you for Contacting LeftOvr {{user.name}}!!</h2>
 <p> Our team will respond back as soon as possible<br><br><br><br><br></p>
 
 </div>

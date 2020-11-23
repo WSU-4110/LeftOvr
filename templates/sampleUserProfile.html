@@ -148,7 +148,7 @@ a {
                             <div class="limit-box">
                                 <nav class="main-menu">
                                     <ul class="menu-area-main">
-                                        <li class="menu-last"> <a href= "#"> My Account</a>
+                                        <li class="menu-last"> <a href= "#"> {{user.username}}</a>
                                             <ul>
                                             <li> <a href="{% url 'proPage' %}"> Profile</a> </li>
                                             <li> <a href="{% url 'pastRec' %}"> Receipts</a> </li>
@@ -156,7 +156,7 @@ a {
                                             <li> <a href="{% url 'custWhy' %}"> Why?</a> </li>
                                             <li> <a href="{% url 'custAbout' %}">About US</a> </li>
                                             <hr>
-                                            <li> <a href="#" class="logout"> Log Out </a></li>
+                                            <li> <a href="{% url 'logout' %}" class="logout"> Log Out </a></li>
                                         </ul>
                                         </li>
                                         <li class="search-icon">
@@ -176,7 +176,7 @@ a {
                                             <li> <a href="{% url 'custWhy' %}"> Why?</a> </li>
                                             <li> <a href="{% url 'custAbout' %}">About US</a> </li>
                                             <hr>
-                                            <li> <a href="#" class="logout"> Log Out </a></li>
+                                            <li> <a href="{% url 'logout' %}" class="logout"> Log Out </a></li>
                                         </ul>
                                     </ul>
                                 </nav>
@@ -197,13 +197,13 @@ a {
       <div class="col-lg-4">
         <div class="card shadow-sm">
           <div class="card-header bg-transparent text-center">
-            <img class="profile_img" src="https://placeimg.com/640/480/arch/any" alt="">
+            <img class="profile_img" src="https://placeimg.com/640/480/arch/any">
             <h3>{{ user.username }} </h3>
           </div>
           <div class="card-body">
-            <p class="mb-0"><strong class="pr-1">User ID:</strong>321000001</p>
-            <p class="mb-0"><strong class="pr-1">State/License ID:</strong>123-345-6789</p>
-            <p class="mb-0"><strong class="pr-1">Leftover Status: </strong>Customer</p>
+            <p class="mb-0"><strong class="pr-1">User ID:</strong>{{user.id}}</p>
+            <p class="mb-0"><strong class="pr-1">State/License ID:</strong>{{user.idNum}}</p>
+            <p class="mb-0"><strong class="pr-1">Leftover Status: </strong>{{user.type}}</p>
           </div>
         </div>
       </div>
@@ -222,12 +222,12 @@ a {
               <tr>
                 <th width="30%">Primary Location:	</th>
                 <td width="2%">:</td>
-                <td>Detroit, Michigan</td>
+                <td>Still working on this part...</td>
               </tr>
               <tr>
-                <th width="30%">Password: </th>
+                <th width="30%">Password: Encrypted</th>
                 <td width="2%">:</td>
-                <td>************</td>
+                <td>{{user.password}}</td>
               </tr>
 
             </table>

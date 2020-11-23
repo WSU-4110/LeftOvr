@@ -30,7 +30,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="added zip code limitation">
-      <change beforePath="$PROJECT_DIR$/templates/TimerSampleCode.html" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/htmlcss/migrations/0003_auto_20201123_0122.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LeftOvr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LeftOvr.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_20__4_10_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_9_20__4_10_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcss/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcss/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcss/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcss/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/AddRemoveMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddRemoveMenu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/BaboReview.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BaboReview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/ChipotleReview.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ChipotleReview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/DominosReview.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/DominosReview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/HeaderNLogoRest.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/HeaderNLogoRest.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/LeosReview.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/LeosReview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/NoResult.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/NoResult.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/RestaurantHomepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RestaurantHomepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/RestaurantInput.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RestaurantInput.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/SendMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/SendMessage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/aboutus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/afterReview.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/afterReview.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/customersamplepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/customersamplepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sampleUserProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sampleUserProfile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/why.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/why.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -476,10 +501,10 @@
       <screen x="0" y="23" width="1440" height="786" />
     </state>
     <state x="371" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.786@0.23.1440.786" timestamp="1604477184028" />
-    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1605888278715">
+    <state x="340" y="233" key="FileChooserDialogImpl" timestamp="1606103832938">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605888278715" />
+    <state x="340" y="233" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606103832938" />
     <state x="647" y="310" key="Github.ShareDialog" timestamp="1602766724587">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -492,10 +517,10 @@
       <screen x="0" y="23" width="1440" height="781" />
     </state>
     <state x="144" y="90" key="MergeDialog/0.23.1440.781@0.23.1440.781" timestamp="1604608093337" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1605882890117">
+    <state x="277" y="57" key="SettingsEditor" timestamp="1606103873618">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605882890117" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606103873618" />
     <state x="452" y="146" key="Vcs.Push.Dialog.v2" timestamp="1606009368998">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

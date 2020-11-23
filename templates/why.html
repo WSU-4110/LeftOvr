@@ -47,7 +47,14 @@
                                         <li> <a href="{% url 'about' %}">About us</a> </li>
                                         <li> <a href="{% url 'why' %}"> Why?</a> </li>
                                         <li> <a href="{% url 'cont' %}">Contact us</a> </li>
+                                        {% if user.is_authenticated %}
+
+                                        <li>  <a href="{% url 'logout' %}">Logout</a> </li>
+                                        <li>  <a href="{% url 'proPage' %}">Profile</a></li>
+
+                                        {% else %}
                                         <li> <a href="{% url 'login' %}">Login </a> </li>
+                                        {% endif %}
                                         <li class="mean-last"> <a href="#"><img src="{% static 'images/search_icon.png' %}" alt="#" /></a> </li>
                                         <li class="mean-last"> <a href="#"><img src="{% static 'images/top-icon.png' %}" alt="#" /></a> </li>
                                     </ul>

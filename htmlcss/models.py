@@ -16,6 +16,9 @@ class User(AbstractUser):
 
     hide_email = models.BooleanField(default=True)
 
+    idNum = models.CharField(verbose_name="idNum", max_length=13, blank=True)
+
+
     def get_absolute_url(self):
         return reverse("users:detail", kwargs={"username": self.username})
 
@@ -48,7 +51,6 @@ class CustomerMore(models.Model):
     firstName = models.CharField(max_length=30)
     lastName = models.CharField(max_length=30)
     password = models.CharField(max_length=30,null=True, unique=True)
-    idNum = models.CharField(verbose_name="idNum", max_length=13)
     custAddress = models.CharField(max_length=90, null=True)
 
 
@@ -59,9 +61,8 @@ class RestaurantManager(models.Manager):
 
 class RestaurantMore(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    busName = models.CharField(max_length=500)
-    busAddress = models.CharField(max_length=500)
-    einNum = models.CharField(max_length=9)
+    busName = models.CharField(verbose_name="busName", max_length=50)
+    busAddress = models.CharField(verbose_name="busAddress", max_length=90, null=True)
 
 class Restaurant(User):
     objects = RestaurantManager

@@ -1,6 +1,6 @@
 
 from django.shortcuts import render, redirect
-from .models import Customer
+from .models import Customer, RestaurantMore
 from .models import Restaurant
 from .models import ContactUs
 from django.contrib.auth import authenticate, login
@@ -74,7 +74,7 @@ def actionR(request):
     emai = request.POST.get("email")
     passs = request.POST.get("psw")
 
-    h_ref = Restaurant(busName=nam, busAddress=ad, einNum=ei, busEmail=emai, busPassWords=passs)
+    h_ref = Restaurant(name=nam, email=emai, password=passs, idNum=ei)
     h_ref.save()
 
     return render(request, "HeaderNLogoRest.html")
@@ -133,6 +133,9 @@ def actionRI(request):
     return render(request, "AddRemoveMenu.html")
 
 def head(request):
+    p = request.POST.get("restLogo")
+    l = Restaurant.profile_pic(p)
+    l.save()
     return render(request, "RestaurantHomepage.html")
 
 def regRec(request):

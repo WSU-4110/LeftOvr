@@ -108,8 +108,15 @@ a {
                                         <li> <a href="{% url 'about' %}">About us</a> </li>
                                         <li> <a href="{% url 'why' %}"> Why?</a> </li>
                                         <li> <a href="{% url 'cont' %}">Contact us</a> </li>
+                                        {% if user.is_authenticated %}
+                                        <!-- login -->
+
+                                        <li>  <a href="{% url 'logout' %}">Logout</a> </li>
+                                        <li>  <a href="{% url 'proPage' %}">Profile</a></li>
+                                        {% else %}
                                         <li> <a href="{% url 'login' %}">Login </a> </li>
-                                        <li> <a href="{% url 'restHome' %}"> </a> </li>
+                                        {% endif %}
+                                        <li> <a href="{% url 'restHome' %}">Businesses HomePage </a> </li>
                                         <li class="mean-last"> <a href="#"><img src="{% static 'images/search_icon.png' %}" alt="#" /></a> </li>
                                         <li class="mean-last"> <a href="#"><img src="{% static 'images/top-icon.png' %}" alt="#" /></a> </li>
                                     </ul>
@@ -126,7 +133,7 @@ a {
 <form action="/new1/" method="post">
     {% csrf_token %}
   <div class="container">
-    <h1>Welcome Restaurant Owner!</h1>
+    <h1>Welcome {{user.name}}!</h1>
     <p>Add available dishes for pickup!</p>
     <hr>
 <input type="text" placeholder="Name of dish" name="dish" id="dish" required>
