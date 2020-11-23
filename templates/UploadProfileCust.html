@@ -44,7 +44,7 @@
 <!--header-->
 <body>
 <h1>Before you get started.........</h1>
-<p> Please upload an image of yourself</p>
+<p> Please upload an image of yourself {{user.username}}</p>
 <form action="/proPage/" method="post">
     {% csrf_token %}
   <input type="file" id="userProfile" name="profile" accept="image/*" capture style="display: flex" required/>
@@ -141,15 +141,14 @@ $("#upfile1").click(function () {
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                         <ul class="location_icon">
-                            <li> <img src="{% static 'icon/email.png' %}"><span>LeftOvrDemo@gmail.com<br>LeftOvrDemo@gmail.com</span></li>
+                            <li> <img src="{% static 'icon/email.png' %}"><span>TheLeftOvrs4111@gmail.com<br>TheLeftOvrs4111@gmail.com</span></li>
                         </ul>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                         <ul class="location_icon">
-                            <li> <a href="#"><img src="{% static 'icon/facebook.png' %}"></a></li>
-                            <li> <a href="#"><img src="{% static 'icon/Twitter.png' %}"></a></li>
-                            <li> <a href="#"><img src="{% static 'icon/linkedin.png' %}"></a></li>
-                            <li> <a href="#"><img src="{% static 'icon/google+.png' %}"></a></li>
+                            <li> <a href="https://www.facebook.com/"><img src="{% static 'icon/facebook.png' %}"></a></li>
+                            <li> <a href="https://twitter.com/?lang=en"><img src="{% static 'icon/Twitter.png' %}"></a></li>
+                            <li> <a href="https://www.linkedin.com/home"><img src="{% static 'icon/linkedin.png' %}"></a></li>
                         </ul>
                     </div>
                 </div>

@@ -127,7 +127,9 @@ opacity: 40%;
                                         <li> <a href="{% url 'login' %}">Login </a> </li>
                                         {% endif %}
                                         <li class="mean-last"> <a href="#"><img src="{% static 'images/search_icon.png' %}" alt="#" /></a> </li>
-                                        <li class="mean-last"> <a href="#"><img src="{% static 'images/top-icon.png' %}" alt="#" /></a> </li>
+                                        {% if user.is_authenticated %}
+                                        <li class="mean-last"><img src="{{user.profile_pic.url}}" width="100" height="100"> </li>
+                                        {% endif %}
                                     </ul>
                                 </nav>
                             </div>
@@ -214,15 +216,14 @@ function GetDynamicTextBox(value) {
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                         <ul class="location_icon">
-                            <li> <img src="{% static 'icon/email.png' %}"><span>LeftOvrDemo@gmail.com<br>LeftOvrDemo@gmail.com</span></li>
+                            <li> <img src="{% static 'icon/email.png' %}"><span>TheLeftOvrs4111@gmail.com<br>TheLeftOvrs4111@gmail.com</span></li>
                         </ul>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                         <ul class="location_icon">
-                            <li> <a href="#"><img src="{% static 'icon/facebook.png' %}"></a></li>
-                            <li> <a href="#"><img src="{% static 'icon/Twitter.png' %}"></a></li>
-                            <li> <a href="#"><img src="{% static 'icon/linkedin.png' %}"></a></li>
-                            <li> <a href="#"><img src="{% static 'icon/google+.png' %}"></a></li>
+                            <li> <a href="https://www.facebook.com/"><img src="{% static 'icon/facebook.png' %}"></a></li>
+                            <li> <a href="https://twitter.com/?lang=en"><img src="{% static 'icon/Twitter.png' %}"></a></li>
+                            <li> <a href="https://www.linkedin.com/home"><img src="{% static 'icon/linkedin.png' %}"></a></li>
                         </ul>
                     </div>
                 </div>

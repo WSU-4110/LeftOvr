@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{% if post %}
+<center><h1>Search Results Found: </h1></center>
+<br>
+{% for i in post %}
+<center><h2>{{i.name}}</h2></center>
+{% endfor %}
+{% else %}
+    <center><h2>No Results :( </h2></center>
+{% endif %}

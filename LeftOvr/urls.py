@@ -45,6 +45,7 @@ urlpatterns = [
     path('act/', views.actionR, name='actionR'),
     path('acti/', views.actionCH, name='actionCH'),
     path('new/', views.actionRH, name='actionRH'),
+    path('search/', views.searchBar, name='searchbar'),
 
     path('restSamp', views.restSamp, name='restSamp'),
     path('new1/', views.actionRI, name='actionRI'),
