@@ -153,3 +153,14 @@ def register(request):
     else:
         form = UserRegisterForm()
     return render(request, 'register.html', {'form': form})
+
+def ChipReview(request):
+    return render(request, "ChipotleReview.html")
+
+
+def DomReview(request):
+    return render(request, "DominosReview.html")
+
+
+def LeoReview(request):
+    return render(request, "LeosReview.html")
