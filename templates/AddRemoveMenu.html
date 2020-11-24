@@ -13,6 +13,8 @@
     [
     <meta name="author" content="Fahmida">
     {% load static %}
+    <script type="text/javascript" src="{ % static 'js/menu_table.js' %}"></script>
+
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -92,6 +94,26 @@ opacity: 40%;
     display: block;
   }
 }
+
+</style>
+    <style>
+.wrapper_tab{
+  background-color: pink;
+
+}
+.row1{
+background-color: white;
+}
+.button1 {
+ 
+}
+
+
+
+
+}
+
+
 </style>
 </head>
 <!-- body -->
@@ -141,52 +163,59 @@ opacity: 40%;
         <!-- end header inner -->
     </header>
 
-<p>&nbsp;</p>
-<h2 class="text-center">Restaurant Menu: Adding items and removing them</h2>
-<section class="container">
-<div class="table table-responsive">
 
-<table class="table table-responsive table-striped table-bordered">
-<thead>
-	<tr>
-    	<td>Item Name</td>
-    	<td>Quantity</td>
-    	<td>Condition</td>
+<div id="wrapper" class="wrapper_tab">
+<h1> Menu</h1>
+<table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1>
+<tr>
+<th>Item</th>
+<th>Condition</th>
+<th>Amount</th>
+<th>Actions</th>
+</tr>
 
-    	<td>Remove</td>
-    </tr>
-</thead>
-<tbody id="TextBoxContainer">
-</tbody>
-<tfoot>
-  <tr>
-    <th colspan="5">
-    <button id="btnAdd" type="button" class="btn btn-primary" data-toggle="tooltip" data-original-title="Add more controls"><i class="glyphicon glyphicon-plus-sign"></i>&nbsp; Add&nbsp;</button></th>
-  </tr>
-</tfoot>
+<tr id="row1">
+<td id="item_row1">Pizza</td>
+<td id="condition_row1">Good</td>
+<td id="amount_row1">10</td>
+<td>
+<input type="button"class=button1 id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+<input type="button" class=button1 id="save_button1" value="Save" class="save" onclick="save_row('1')">
+<input type="button" class=button1 value="Delete" class="delete" onclick="delete_row('1')">
+</td>
+</tr>
+
+<tr id="row2">
+<td id="item_row2">Pasta</td>
+<td id="condition_row2">Ok</td>
+<td id="amount_row2">26</td>
+<td>
+<input type="button" class=button1 id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+<input type="button" class=button1 id="save_button2" value="Save" class="save" onclick="save_row('2')">
+<input type="button"class=button1 value="Delete" class="delete" onclick="delete_row('2')">
+</td>
+</tr>
+
+<tr id="row3">
+<td id="item_row3">Fruits</td>
+<td id="condition_row3">Perfect</td>
+<td id="amount_row3">19</td>
+<td>
+<input type="button" class=button1 id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+<input type="button" class=button1 id="save_button3" value="Save" class="save" onclick="save_row('3')">
+<input type="button" class=button1 value="Delete" class="delete" onclick="delete_row('3')">
+</td>
+</tr>
+
+<tr>
+<td><input type="text" id="new_item" ></td>
+<td><input type="text" id="new_condition" ></td>
+<td><input type="text" id="new_amount" > </td>
+<td><input type="button" class=button1 class="add" onclick="add_row();" value="Add Row"></td>
+</tr>
+
 </table>
 </div>
-</section>
-<div>
-<h4 style="color:red"> Submit option not available yet. Database not connected yet. </h4>
-</div>
-<script>
-
-$(function () {
-    $("#btnAdd").bind("click", function () {
-        var div = $("<tr />");
-        div.html(GetDynamicTextBox(""));
-        $("#TextBoxContainer").append(div);
-    });
-    $("body").on("click", ".remove", function () {
-        $(this).closest("tr").remove();
-    });
-});
-function GetDynamicTextBox(value) {
-    return '<td><input name = "DynamicTextBox" type="text" value = "' + value + '" class="form-control" /></td>' + '<td><select name="" class="form-control"><option> Select</option><option> 1</option><option> 2</option><option> 3 </option> <option> 4</option><option> 5 </option><option> 6 </option></select></td>' + '<td><select name="" class="form-control"><option> Select</option><option> Good </option><option> Pretty Good</option><option> OK </option> <option> Burned </option><option> Small Portion </option><option> Perfectly Fine </option></select></td>' + value + '   " /></td>' + '<td><button type="button" class="btn btn-danger remove"><i class="glyphicon glyphicon-remove-sign"></i></button></td>'
-}
-</script>
-
  <!-- end about -->
 <footer>
         <div class="footer">

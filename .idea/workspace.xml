@@ -29,45 +29,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="added zip code limitation">
-      <change afterPath="$PROJECT_DIR$/templates/searchbar.html" afterDir="false" />
+    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="why is every file duplicated? smh">
+      <change afterPath="$PROJECT_DIR$/static/js/menu_table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LeftOvr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LeftOvr.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeftOvr/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeftOvr/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcss/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcss/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/AddRemoveMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddRemoveMenu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/BaboReview.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/BaboReview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ChipotleReview.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/ChipotleReview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CustAbout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CustAbout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CustContact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CustContact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CustWhy.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CustWhy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/CustomerHomepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CustomerHomepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/DominosReview.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/DominosReview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/HeaderNLogoRest.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/HeaderNLogoRest.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/LeosReview.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/LeosReview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/PastReceipt.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/PastReceipt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/RestaurantHomepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RestaurantHomepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/RestaurantInput.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RestaurantInput.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/RestaurantRegistration.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/RestaurantRegistration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/SendMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/SendMessage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/UploadProfileCust.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/UploadProfileCust.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/aboutus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/afterReview.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/afterReview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/customerPasswordForget.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/customerPasswordForget.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/customerRegistration.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/customerRegistration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/customersamplepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/customersamplepage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/logout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/password_reset.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/password_reset.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/password_reset_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/password_reset_complete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/password_reset_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/password_reset_confirm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/password_reset_done.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/password_reset_done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/receiptSample.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/receiptSample.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/sampleUserProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sampleUserProfile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/why.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/why.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,20 +44,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="62315c24-0e58-4d11-953b-d569c96ea641" />
+  <component name="JupyterTrust" id="c970b5f5-c21e-4659-8421-87337a4e8bc4" />
   <component name="ProjectId" id="1itKxPil5vTmPBFyq720kdqo3xE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -101,50 +62,19 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ChangesTree.GroupingKeys" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static/images" />
       <recent name="C:\Users\JohnW\Desktop\LeftOvr\statics\css" />
     </key>
-  </component>
-  <component name="RunManager">
-    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="LeftOvr" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
-      <option name="PARAMETERS" value="runserver" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="true" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -176,7 +106,6 @@
       <workItem from="1605237308085" duration="414000" />
       <workItem from="1605239351017" duration="650000" />
       <workItem from="1605637267100" duration="7039000" />
-      <workItem from="1606000089343" duration="8940000" />
     </task>
     <task id="LOCAL-00001" summary="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later">
       <created>1602776938962</created>
@@ -360,91 +289,7 @@
       <option name="project" value="LOCAL" />
       <updated>1605642400349</updated>
     </task>
-    <task id="LOCAL-00027" summary="testing">
-      <created>1605889150347</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1605889150347</updated>
-    </task>
-    <task id="LOCAL-00028" summary="testing">
-      <created>1605891899932</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1605891899932</updated>
-    </task>
-    <task id="LOCAL-00029" summary="testing">
-      <created>1605893756648</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1605893756648</updated>
-    </task>
-    <task id="LOCAL-00030" summary="testing">
-      <created>1606004877094</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1606004877094</updated>
-    </task>
-    <task id="LOCAL-00031" summary="testing">
-      <created>1606005445423</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1606005445423</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Chipotle review">
-      <created>1606006922484</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1606006922484</updated>
-    </task>
-    <task id="LOCAL-00033" summary="Dominos review">
-      <created>1606007104365</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1606007104365</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Babo review">
-      <created>1606007385834</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1606007385834</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Leo's review">
-      <created>1606007509485</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1606007509485</updated>
-    </task>
-    <task id="LOCAL-00036" summary="after review">
-      <created>1606008148944</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1606008148944</updated>
-    </task>
-    <task id="LOCAL-00037" summary="added zip code limitation">
-      <created>1606009357109</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1606009357109</updated>
-    </task>
-    <task id="LOCAL-00038" summary="added zip code limitation">
-      <created>1606114631999</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1606114631999</updated>
-    </task>
-    <option name="localTasksCounter" value="39" />
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,6 +321,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later" />
+    <MESSAGE value="changed statics to static(file name). added alt=&quot;&quot; to image src lines." />
+    <MESSAGE value="added a default image for user profile. and made small change to database" />
+    <MESSAGE value="Trying to create page header after login-customer" />
+    <MESSAGE value="Deleted all repeated files. checked page after looks fine." />
+    <MESSAGE value="put some code TimerSampleCode.html that can be used for the internal timer" />
+    <MESSAGE value="added creator information in about us" />
+    <MESSAGE value="added better images to developer information" />
     <MESSAGE value="created sampleUserProfile.html for displaying user information" />
     <MESSAGE value="fixed an error in custom.js" />
     <MESSAGE value="forgot to add line for id in user profile. Added" />
@@ -493,15 +346,7 @@
     <MESSAGE value="Checking" />
     <MESSAGE value="changed image and look of home page" />
     <MESSAGE value="why is every file duplicated? smh" />
-    <MESSAGE value="Timer and Review page" />
-    <MESSAGE value="testing" />
-    <MESSAGE value="Chipotle review" />
-    <MESSAGE value="Dominos review" />
-    <MESSAGE value="Babo review" />
-    <MESSAGE value="Leo's review" />
-    <MESSAGE value="after review" />
-    <MESSAGE value="added zip code limitation" />
-    <option name="LAST_COMMIT_MESSAGE" value="added zip code limitation" />
+    <option name="LAST_COMMIT_MESSAGE" value="why is every file duplicated? smh" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="90" key="#Inspections" timestamp="1602750392190">
@@ -512,18 +357,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="508" y="236" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1602728241126" />
-    <state x="223" y="67" width="1089" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605888315759">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="223" y="67" width="1089" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605888315759" />
     <state x="371" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604477184028">
       <screen x="0" y="23" width="1440" height="786" />
     </state>
     <state x="371" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.786@0.23.1440.786" timestamp="1604477184028" />
-    <state x="340" y="233" key="FileChooserDialogImpl" timestamp="1606103832938">
+    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1602766703699">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="340" y="233" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1606103832938" />
+    <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602766703699" />
     <state x="647" y="310" key="Github.ShareDialog" timestamp="1602766724587">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -536,22 +377,22 @@
       <screen x="0" y="23" width="1440" height="781" />
     </state>
     <state x="144" y="90" key="MergeDialog/0.23.1440.781@0.23.1440.781" timestamp="1604608093337" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1606103873618">
+    <state x="277" y="57" key="SettingsEditor" timestamp="1602729837041">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1606103873618" />
-    <state x="452" y="146" key="Vcs.Push.Dialog.v2" timestamp="1606114638456">
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602729837041" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1602795059882">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="452" y="146" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1606114638456" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1602795059882" />
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1602795448546">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1602795448546" />
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606164241223">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="549" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605642346847">
+      <screen x="0" y="23" width="1440" height="786" />
     </state>
-    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1606164241223" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1602795031268" />
     <state x="549" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.781@0.23.1440.781" timestamp="1605222212630" />
     <state x="549" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.786@0.23.1440.786" timestamp="1605642346847" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602774015163">
