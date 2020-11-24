@@ -29,9 +29,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="added images to menu">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="updated no search results message." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -299,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606253837577</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="updated no search results message.">
+      <created>1606256201798</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1606256201798</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +336,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added a default image for user profile. and made small change to database" />
     <MESSAGE value="Trying to create page header after login-customer" />
     <MESSAGE value="Deleted all repeated files. checked page after looks fine." />
     <MESSAGE value="put some code TimerSampleCode.html that can be used for the internal timer" />
@@ -356,7 +360,8 @@
     <MESSAGE value="why is every file duplicated? smh" />
     <MESSAGE value="Menu table should work." />
     <MESSAGE value="added images to menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="added images to menu" />
+    <MESSAGE value="updated no search results message." />
+    <option name="LAST_COMMIT_MESSAGE" value="updated no search results message." />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="90" key="#Inspections" timestamp="1602750392190">
