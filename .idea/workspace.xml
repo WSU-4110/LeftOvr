@@ -29,10 +29,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="why is every file duplicated? smh">
-      <change afterPath="$PROJECT_DIR$/static/js/menu_table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/LeftOvr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LeftOvr.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="Menu table should work.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/AddRemoveMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddRemoveMenu.html" afterDir="false" />
     </list>
@@ -289,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605642400349</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Menu table should work.">
+      <created>1606251846782</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1606251846782</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +325,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later" />
     <MESSAGE value="changed statics to static(file name). added alt=&quot;&quot; to image src lines." />
     <MESSAGE value="added a default image for user profile. and made small change to database" />
     <MESSAGE value="Trying to create page header after login-customer" />
@@ -346,7 +349,8 @@
     <MESSAGE value="Checking" />
     <MESSAGE value="changed image and look of home page" />
     <MESSAGE value="why is every file duplicated? smh" />
-    <option name="LAST_COMMIT_MESSAGE" value="why is every file duplicated? smh" />
+    <MESSAGE value="Menu table should work." />
+    <option name="LAST_COMMIT_MESSAGE" value="Menu table should work." />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="90" key="#Inspections" timestamp="1602750392190">
@@ -389,11 +393,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1602795448546" />
-    <state x="549" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605642346847">
-      <screen x="0" y="23" width="1440" height="786" />
+    <state x="549" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606251805492">
+      <screen x="0" y="23" width="1440" height="781" />
     </state>
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1602795031268" />
-    <state x="549" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.781@0.23.1440.781" timestamp="1605222212630" />
+    <state x="549" y="332" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.781@0.23.1440.781" timestamp="1606251805492" />
     <state x="549" y="334" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.786@0.23.1440.786" timestamp="1605642346847" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1602774015163">
       <screen x="0" y="0" width="1536" height="824" />
