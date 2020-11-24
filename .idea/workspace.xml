@@ -29,7 +29,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="updated no search results message." />
+    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="fixed small style issue">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/AddRemoveMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddRemoveMenu.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -304,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606256201798</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="fixed small style issue">
+      <created>1606256766031</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1606256766032</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,7 +346,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Trying to create page header after login-customer" />
     <MESSAGE value="Deleted all repeated files. checked page after looks fine." />
     <MESSAGE value="put some code TimerSampleCode.html that can be used for the internal timer" />
     <MESSAGE value="added creator information in about us" />
@@ -361,7 +370,8 @@
     <MESSAGE value="Menu table should work." />
     <MESSAGE value="added images to menu" />
     <MESSAGE value="updated no search results message." />
-    <option name="LAST_COMMIT_MESSAGE" value="updated no search results message." />
+    <MESSAGE value="fixed small style issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed small style issue" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="90" key="#Inspections" timestamp="1602750392190">
