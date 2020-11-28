@@ -51,7 +51,7 @@ def sendMes(request):
 def wh(request):
     return render(request, 'why.html')
 
-def logI(request):
+def login(request):
     return render(request, 'login.html')
 
 def actionC(request):

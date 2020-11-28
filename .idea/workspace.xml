@@ -29,9 +29,19 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="fixed small style issue">
+    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="changed text to image for Menu">
+      <change afterPath="$PROJECT_DIR$/LeftOvr/test_HomePage_urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/LeftOvr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LeftOvr.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/AddRemoveMenu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/AddRemoveMenu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeftOvr/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeftOvr/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcss/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcss/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcss/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CustAbout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CustAbout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CustContact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CustContact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CustWhy.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CustWhy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/CustomerHomepage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/CustomerHomepage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/sampleUserProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/sampleUserProfile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +52,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Python Unit Test" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -103,6 +115,9 @@
       <workItem from="1605237308085" duration="414000" />
       <workItem from="1605239351017" duration="650000" />
       <workItem from="1605637267100" duration="7039000" />
+      <workItem from="1606258345779" duration="386000" />
+      <workItem from="1606277812498" duration="249000" />
+      <workItem from="1606511991924" duration="11829000" />
     </task>
     <task id="LOCAL-00001" summary="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later">
       <created>1602776938962</created>
@@ -314,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606256766032</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="changed text to image for Menu">
+      <created>1606258068159</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1606258068159</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,7 +368,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Deleted all repeated files. checked page after looks fine." />
     <MESSAGE value="put some code TimerSampleCode.html that can be used for the internal timer" />
     <MESSAGE value="added creator information in about us" />
     <MESSAGE value="added better images to developer information" />
@@ -371,7 +392,8 @@
     <MESSAGE value="added images to menu" />
     <MESSAGE value="updated no search results message." />
     <MESSAGE value="fixed small style issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed small style issue" />
+    <MESSAGE value="changed text to image for Menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed text to image for Menu" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="90" key="#Inspections" timestamp="1602750392190">
