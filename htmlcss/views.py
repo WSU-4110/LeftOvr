@@ -114,10 +114,13 @@ def custWhy(request):
 def custCont(request):
     return render(request, "CustContact.html")
 
+def error404(request, exception):
+    return render(request,'404.html')
 
 def contactPage(request):
     na = request.POST.get("name")
     em = request.POST.get("email")
+    ph = request.POST.get("phone")
     ph = request.POST.get("phone")
     mee = request.POST.get("message")
 
