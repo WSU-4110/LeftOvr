@@ -12,11 +12,6 @@ from django.contrib.auth import get_user_model
 
 User = get_user_model()
 
-def searchBar(request):
-    if request.method == 'GET':
-        search = request.GET.get('searc')
-        post = Restaurant.objects.all().filter(name=search)
-        return render(request, 'searchbar.html', {'post': post})
 
 def index(request):
     return render(request, 'index.html')
@@ -51,7 +46,7 @@ def sendMes(request):
 def wh(request):
     return render(request, 'why.html')
 
-def login(request):
+def logI(request):
     return render(request, 'login.html')
 
 def actionC(request):
