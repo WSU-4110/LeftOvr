@@ -58,7 +58,12 @@ urlpatterns = [
     path('custWhy', views.custWhy, name='custWhy'),
     path('regRec', views.regRec, name='regRec'),
 
-    path('register/', views.register, name='register'),
+    path('customer-register/', views.customerRegister, name='customer-register'),
+    path('restaurant-register/', views.restaurantRegister, name='restaurant-register'),
+
+    path('LeoReview/', views.LeoReview, name='Leo'),
+    path('ChipReview/', views.ChipReview, name='Chip'),
+    path('DomReview/', views.DomReview, name='Dom'),
 
    path('password-reset/',
          auth_views.PasswordResetView.as_view

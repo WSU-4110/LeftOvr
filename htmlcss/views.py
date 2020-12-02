@@ -1,14 +1,17 @@
 
 from django.shortcuts import render, redirect
-from .models import Customer, RestaurantMore
+from .models import Customer
 from .models import Restaurant
 from .models import ContactUs
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm
 from django.contrib import messages
-from .decorators import unauthenticated_user, allowed_users
+from .decorators import unauthenticated_user, allowed_users, restaurant_user
 from django.contrib.auth import get_user_model
+import pytest
+from django.contrib.auth.models import Group
+from .forms import UserRegisterForm
 
 User = get_user_model()
 
@@ -134,28 +137,53 @@ def actionRI(request):
 
 def head(request):
     p = request.POST.get("restLogo")
-    l = Restaurant.profile_pic(p)
-    l.save()
     return render(request, "RestaurantHomepage.html")
 
 def regRec(request):
     return render(request, "receiptSample.html")
 
-@unauthenticated_user
-def register(request):
+
+def customerRegister(request):
+
+    form = UserRegisterForm()
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
         if form.is_valid():
-            form.save()
+            user = form.save()
             username = form.cleaned_data.get('username')
+
+            group = Group.objects.get(name='customer')
+            user.groups.add(group)
+
             messages.success(request, f'Account created! You are now able to log in!')
             return redirect('index')
-    else:
-        form = UserRegisterForm()
-    return render(request, 'register.html', {'form': form})
+
+    context = {'form': form}
+    return render(request, 'customerRegistration.html', context)
+
+def restaurantRegister(request):
+
+    form = UserRegisterForm()
+    if request.method == 'POST':
+        form = UserRegisterForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            username = form.cleaned_data.get('username')
+
+            group = Group.objects.get(name='restaurant')
+            user.groups.add(group)
+
+            messages.success(request, f'Account created! You are now able to log in!')
+            return redirect('index')
+
+    context = {'form': form}
+    return render(request, 'RestaurantRegistration.html', context)
+
+
 
 def ChipReview(request):
     return render(request, "ChipotleReview.html")
+
 
 
 def DomReview(request):
