@@ -12,12 +12,22 @@ from django.contrib.auth import get_user_model
 import pytest
 from django.contrib.auth.models import Group
 from .forms import UserRegisterForm, CustomerRegisterForm
-
+from .filters import RestaurantFilter
 
 
 def index(request):
-    context = {'customers': Customer.objects.all()}
-    return render(request, 'index.html', context)
+    return render(request, 'index.html')
+
+def search(request):
+
+    restaurants = Restaurant.objects.filter()
+
+    myFilter = RestaurantFilter(request.GET)
+    restaurants = myFilter.qs
+
+    context = {'myFilter': myFilter, 'restaurants': restaurants}
+    return render(request, 'searchbar.html', context)
+
 
 def about(request):
     return render(request, 'aboutus.html')

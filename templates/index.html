@@ -64,13 +64,9 @@
                                         {% else %}
                                         <li> <a href="{% url 'login' %}">Login </a> </li>
                                         {% endif %}
-                                        <li class="mean-last"> <a href="#" onclick="myFunction()">
+                                        <li class="mean-last"> <a href="{% url 'search' %}" onclick="myFunction()">
                                             <img src="{% static 'images/search_icon.png' %}" alt="#" /></a> </li>
-                                        <script>
-                                            function myFunction() {
-                                                alert("OOPS. Please, Log in to search the website! ");
-                                            }
-                                        </script>
+                                        
                                     </ul>
                                 </nav>
                             </div>
@@ -98,12 +94,13 @@
                             <h1 style="color:white;">Hey, {{user.username}}! <br><strong class="cur" style="color: #CF9695">Welcome to LeftOvr.</strong></h1>
                             {% else %}
                             <h1 style="color:white;">Hey, there! <br><strong class="cur" style="color: #CF9695">Welcome to LeftOvr.</strong></h1>
-                             <br>Choose you role and sign up to our platform. If you are interested.
+
                             {% endif %}
                             <span style="color: #f7f7f7">We can help you connect to restaurants and customers.</span>
                             <p style="color: white;">Our platform will help you get free food from restaurants.
                                 <br>The food that will be provided by the restaurant will be leftover food.
                                 <br> This is to reduce food waste.
+                                <br>Choose you role and sign up to our platform. If you are interested.
                             </p>
 
                                                                     <!-- button  leaf  restaurant & customer-->
