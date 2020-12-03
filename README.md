@@ -1,4 +1,4 @@
-<h1> LeftOvr<br> <img src ="logo4.jpg" alt="Logo"></h1>
+<h1> <img src ="logo4.jpg" alt="Logo"></h1>
 <h1> About us </h1>
 
 
