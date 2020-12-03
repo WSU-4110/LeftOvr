@@ -29,13 +29,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="changed links from past receipts to receipts">
-      <change afterPath="$PROJECT_DIR$/templates/404.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeftOvr/test_HomePage_urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeftOvr/test_HomePage_urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeftOvr/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeftOvr/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcss/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcss/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="eeedec7e-d8c3-4b29-b7d2-f60f2354e0f8" name="Default Changelist" comment="unit test done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +105,7 @@
       <workItem from="1606258345779" duration="386000" />
       <workItem from="1606277812498" duration="249000" />
       <workItem from="1606511991924" duration="12235000" />
-      <workItem from="1606529414566" duration="7736000" />
+      <workItem from="1606529414566" duration="7967000" />
     </task>
     <task id="LOCAL-00001" summary="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later">
       <created>1602776938962</created>
@@ -337,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606529018327</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="unit test done">
+      <created>1606621145136</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1606621145136</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +370,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added better images to developer information" />
     <MESSAGE value="created sampleUserProfile.html for displaying user information" />
     <MESSAGE value="fixed an error in custom.js" />
     <MESSAGE value="forgot to add line for id in user profile. Added" />
@@ -394,7 +394,8 @@
     <MESSAGE value="changed text to image for Menu" />
     <MESSAGE value="HomePage URLs test done" />
     <MESSAGE value="changed links from past receipts to receipts" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed links from past receipts to receipts" />
+    <MESSAGE value="unit test done" />
+    <option name="LAST_COMMIT_MESSAGE" value="unit test done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="90" key="#Inspections" timestamp="1602750392190">
