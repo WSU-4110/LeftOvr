@@ -1,16 +1,16 @@
 <h1> LeftOvr<br> <img src ="logo4.png" alt="Logo"></h1>
 <h1> About us </h1>
 
-```
-Food waste has been a problem for ages. 
-While many go hungry and even starve to death all around the world,
-others throw food away daily. 
-We as individuals throw away food at home 
-but restaurants and grocery stores also throw away a ton of food.
---------
-Through this platform, we wish reduce atleast some amount of food waste 
-by connecting individuals with restaurants.  
-```
+
+<p>Food waste has been a problem for ages. <br>
+While many go hungry and even starve to death all around the world,<br>
+others throw food away daily. <br>
+We as individuals throw away food at home <br>
+but restaurants and grocery stores also throw away a ton of food.<br>
+--------<br>
+Through this platform, we wish reduce atleast some amount of food waste <br>
+by connecting individuals with restaurants.  </p>
+
 
 # Getting Started
   * Download Latest Version of Python 
