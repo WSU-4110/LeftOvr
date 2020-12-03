@@ -16,7 +16,7 @@ from .forms import UserRegisterForm, CustomerRegisterForm
 
 
 def index(request):
-    context = {'restaurants': Restaurant.objects.all()}
+    context = {'customers': Customer.objects.all()}
     return render(request, 'index.html', context)
 
 def about(request):
