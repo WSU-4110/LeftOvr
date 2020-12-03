@@ -211,3 +211,6 @@ def CustomerDemoReserve(request):
 
 def NoResult(request):
     return render(request, 'NoResult.html')
+
+def Timer(request):
+    return render(request, 'TimerSampleCode.html')

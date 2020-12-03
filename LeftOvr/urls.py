@@ -69,6 +69,7 @@ urlpatterns = [
     path('customer-demo-reserve/', views.CustomerDemoReserve, name='customer-reserve'),
     path('no-result/', views.NoResult, name='no-result'),
     path('thank-you-resv/', views.Thankyou_Reserver, name='thank-you-reserve'),
+    path('timer/', views.Timer, name='timer'),
 
 
 
