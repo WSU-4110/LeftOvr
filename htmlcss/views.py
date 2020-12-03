@@ -11,13 +11,13 @@ from .decorators import unauthenticated_user, allowed_users, restaurant_user
 from django.contrib.auth import get_user_model
 import pytest
 from django.contrib.auth.models import Group
-from .forms import UserRegisterForm
+from .forms import UserRegisterForm, CustomerRegisterForm
 
-User = get_user_model()
 
 
 def index(request):
-    return render(request, 'index.html')
+    context = {'restaurants': Restaurant.objects.all()}
+    return render(request, 'index.html', context)
 
 def about(request):
     return render(request, 'aboutus.html')

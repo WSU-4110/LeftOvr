@@ -60,7 +60,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="c970b5f5-c21e-4659-8421-87337a4e8bc4" />
+  <component name="JupyterTrust" id="de78c50e-cb4a-4cb6-be42-d2aa9b1ef656" />
   <component name="ProjectId" id="1itKxPil5vTmPBFyq720kdqo3xE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -76,7 +76,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/manage.py" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
@@ -84,6 +84,30 @@
       <recent name="$PROJECT_DIR$/static/images" />
       <recent name="C:\Users\JohnW\Desktop\LeftOvr\statics\css" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="RunServer" type="PythonConfigurationType" factoryName="Python">
+      <module name="LeftOvr" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\omari\AppData\Local\Programs\Python\Python38\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
+      <option name="PARAMETERS" value="runserver" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="true" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -118,6 +142,7 @@
       <workItem from="1606258345779" duration="386000" />
       <workItem from="1606277812498" duration="249000" />
       <workItem from="1606511991924" duration="11829000" />
+      <workItem from="1606957134347" duration="3783000" />
     </task>
     <task id="LOCAL-00001" summary="Updated version, path for customer from registration to the meal page is set up. Will do restaurant later">
       <created>1602776938962</created>
@@ -404,13 +429,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="508" y="236" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1602728241126" />
+    <state x="268" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606957187016">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="268" y="14" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1360.728@0.0.1360.728" timestamp="1606957187016" />
     <state x="371" y="222" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604477184028">
       <screen x="0" y="23" width="1440" height="786" />
     </state>
     <state x="371" y="222" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.786@0.23.1440.786" timestamp="1604477184028" />
-    <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1602766703699">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="486" y="135" key="FileChooserDialogImpl" timestamp="1606957167565">
+      <screen x="0" y="0" width="1360" height="728" />
     </state>
+    <state x="486" y="135" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1606957167565" />
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602766703699" />
     <state x="647" y="310" key="Github.ShareDialog" timestamp="1602766724587">
       <screen x="0" y="0" width="1536" height="824" />
@@ -420,6 +450,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="579" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1602766738991" />
+    <state width="634" height="177" key="GridCell.Tab.0.bottom" timestamp="1606960651610">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="634" height="177" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1606960651610" />
+    <state width="634" height="177" key="GridCell.Tab.0.center" timestamp="1606960651610">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="634" height="177" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1606960651610" />
+    <state width="634" height="177" key="GridCell.Tab.0.left" timestamp="1606960651609">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="634" height="177" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1606960651609" />
+    <state width="634" height="177" key="GridCell.Tab.0.right" timestamp="1606960651610">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="634" height="177" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1606960651610" />
     <state x="144" y="90" key="MergeDialog" timestamp="1604608093337">
       <screen x="0" y="23" width="1440" height="781" />
     </state>
@@ -450,5 +496,8 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="599" y="203" key="svn.repositoryBrowser/0.0.1536.824@0.0.1536.824" timestamp="1602766779452" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LeftOvr$RunServer.coverage" NAME="RunServer Coverage Results" MODIFIED="1606960651602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

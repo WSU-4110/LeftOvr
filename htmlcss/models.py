@@ -18,6 +18,7 @@ class Restaurant(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     businessName = models.CharField(verbose_name="busName", max_length=50)
     businessAddress = models.CharField(verbose_name="busAddress", max_length=90, null=True)
+    objects = models.Manager()
 
     def __str__(self):
         return self.businessName
