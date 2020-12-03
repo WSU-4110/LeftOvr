@@ -108,34 +108,9 @@
 
                                                                     <!-- button  leaf  restaurant & customer-->
 
-                            <div class="card">
-                                <h3>Customers</h3>
-
-                            {% if user.is_authenticated %}
-                            {% block content %}
-                            {% for customer in customers %}
-                            <article class="media-body">
-                            <div class="user-profile py-4">
-                                <div class="container">
-                                    <div class="row">
-                                     <div class="col-lg-4">
-                                        <div class="card shadow-sm">
-                                        <div class="card-header bg-transparent text-center">
-                                            <h3>{{ customer.firstName }} {{ customer.lastName }}</h3>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                                </div>
-                            </article>
-                            {% endfor %}
-                            {% endblock content %}
-                            {% else %}
+                           }
                             <div class="button_section"> <a class="main_bt" href="{% url 'customer-register' %}">Customer</a> <a class="main_bt" href="{% url 'restaurant-register' %}">Restaurant</a> </div>
 
-                            {% endif %}
-                        </div>
                         </div>
                     </article>
                     </div>
