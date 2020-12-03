@@ -66,6 +66,13 @@ urlpatterns = [
     path('ChipReview/', views.ChipReview, name='Chip'),
     path('DomReview/', views.DomReview, name='Dom'),
 
+    path('customer-demo-reserve/', views.CustomerDemoReserve, name='customer-reserve'),
+    path('no-result/', views.NoResult, name='no-result'),
+    path('thank-you-resv/', views.Thankyou_Reserver, name='thank-you-reserve'),
+
+
+
+
    path('password-reset/',
          auth_views.PasswordResetView.as_view
          (template_name='password_reset.html'),

@@ -202,3 +202,12 @@ def DomReview(request):
 
 def LeoReview(request):
     return render(request, "LeosReview.html")
+
+def Thankyou_Reserver(request):
+    return render(request, 'ThankYou_Reserver.html')
+
+def CustomerDemoReserve(request):
+    return render(request, 'CustomerDemoReservePage.html')
+
+def NoResult(request):
+    return render(request, 'NoResult.html')
