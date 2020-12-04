@@ -1,4 +1,10 @@
-language: python
-rvm:
-  -3.8
-  -pytest
+{
+  "language": "python",
+  "os": [
+      "linux"
+  ],
+  "dist": "xenial",
+  "rvm": [
+      "-3.8 -pytest"
+  ]
+}
