@@ -28,6 +28,7 @@ class Meal(models.Model):
     meal = models.CharField(verbose_name="leftover food", max_length=50)
     quantity = models.IntegerField(verbose_name="leftover food amount")
     wait_time = models.DateTimeField(verbose_name="wait time")
+    objects = models.Manager()
 
     def __str__(self):
         return self.meal

@@ -10,9 +10,10 @@ from django.contrib import messages
 from .decorators import unauthenticated_user, allowed_users, restaurant_user
 from django.contrib.auth import get_user_model
 import pytest
-from django.contrib.auth.models import Group
+from django.contrib.auth.models import Group, User
 from .forms import UserRegisterForm, CustomerRegisterForm
 from .filters import RestaurantFilter
+
 
 
 def index(request):
@@ -214,3 +215,7 @@ def NoResult(request):
 
 def Timer(request):
     return render(request, 'TimerSampleCode.html')
+
+def RestaurantProfile(request):
+
+    return render(request, 'restaurantProfile.html')
