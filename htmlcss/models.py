@@ -23,6 +23,14 @@ class Restaurant(models.Model):
     def __str__(self):
         return self.businessName
 
+class Meal(models.Model):
+    restaurant = models.ForeignKey(Restaurant, on_delete=models.CASCADE)
+    meal = models.CharField(verbose_name="leftover food", max_length=50)
+    quantity = models.IntegerField(verbose_name="leftover food amount")
+    wait_time = models.DateTimeField(verbose_name="wait time")
+
+    def __str__(self):
+        return self.meal
 
 class ContactUs(models.Model):
 

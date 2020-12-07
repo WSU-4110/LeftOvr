@@ -70,6 +70,7 @@ urlpatterns = [
     path('no-result/', views.NoResult, name='no-result'),
     path('thank-you-resv/', views.Thankyou_Reserver, name='thank-you-reserve'),
     path('timer/', views.Timer, name='timer'),
+    path('restaurant/', views.RestaurantProfile, name='restaurant-profile'),
 
 
 
