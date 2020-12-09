@@ -1,8 +1,8 @@
 
 from django.shortcuts import render, redirect
-from .models import Customer
-from .models import Restaurant
-from .models import ContactUs
+from django.views.generic import TemplateView
+
+from .models import Customer, Restaurant, ContactUs, Meal
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm
@@ -216,6 +216,14 @@ def NoResult(request):
 def Timer(request):
     return render(request, 'TimerSampleCode.html')
 
-def RestaurantProfile(request):
 
-    return render(request, 'restaurantProfile.html')
+def RestaurantProfile(request, pk=None):
+    if pk:
+        restaurant = Restaurant.objects.get(pk=pk)
+        meals = Meal.objects.get(pk=pk)
+    else:
+        user = request.User
+
+    args = {'restaurant': restaurant, 'meal': meals}
+    return render(request, 'restaurantProfile.html', args)
+
