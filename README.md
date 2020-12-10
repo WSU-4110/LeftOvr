@@ -10,12 +10,19 @@ but restaurants and grocery stores also throw away a ton of food.<br>
 --------<br>
 Through this platform, we wish reduce atleast some amount of food waste <br>
 by connecting individuals with restaurants.  </p>
-
-
+# The Look
+<img src ="view.jpeg" alt="Logo">
+# Some Elements
+* Home Page, About Us, Contact Us
+* Learn Why we choose this project/brand purpose
+* Sign up as a customer 
+* Sign up a restaurant 
 # Getting Started
   * Download Latest Version of Python 
   * Download PyCharm
   * Download Django
+  * Download the things in requirement.txt
+
   After opening project in pycharm, on terminal run commands: 
   
   ``` 
