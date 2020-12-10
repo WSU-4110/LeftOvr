@@ -86,7 +86,7 @@
         <table class="table table-sm">
             {% for restaurant in restaurants %}
         <tr>
-            <td><a href="{% url 'restaurant-profile' %}">{{ restaurant.businessName }}</a></td>
+            <td><a href="{% url 'restaurant-profile-with-pk' pk=restaurant.pk %}">{{ restaurant.businessName }}</a></td>
             <td>{{ restaurant.businessAddress }}</td>
         </tr>
         {% endfor %}

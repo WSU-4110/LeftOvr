@@ -29,13 +29,13 @@ urlpatterns = [
     path('about', views.about, name='about'),
     path('cont', views.cont, name='cont'),
 
-    path('custHome', views.custHome, name='custHome'),
+    path('custHome/', views.custHome, name='custHome'),
     # url path for customer registration (from button index)
-    path('custReg', views.custReg, name='custReg'),
+    path('custReg/', views.custReg, name='custReg'),
     path('custSamp', views.custSamp, name='custSamp'),
     path('restHome', views.restHome, name='restHome'),
     path('restInp', views.restInp, name='restInp'),
-    #url path for restaurant registration page
+    # url path for restaurant registration page
     path('restReg', views.restReg, name='restReg'),
     path('sendMes', views.sendMes, name='sendMes'),
     # url path for why
@@ -65,12 +65,13 @@ urlpatterns = [
     path('LeoReview/', views.LeoReview, name='Leo'),
     path('ChipReview/', views.ChipReview, name='Chip'),
     path('DomReview/', views.DomReview, name='Dom'),
+    path('olivePage/', views.OlivePage, name='Olive'),
 
     path('customer-demo-reserve/', views.CustomerDemoReserve, name='customer-reserve'),
     path('no-result/', views.NoResult, name='no-result'),
     path('thank-you-resv/', views.Thankyou_Reserver, name='thank-you-reserve'),
     path('timer/', views.Timer, name='timer'),
-    path('restaurant/', views.RestaurantProfile, name='restaurant-profile'),
+    path('restaurant/(?P<pk>\d+)/', views.RestaurantProfile, name='restaurant-profile-with-pk'),
 
 
 

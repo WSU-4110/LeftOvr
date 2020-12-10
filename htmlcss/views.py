@@ -227,3 +227,6 @@ def RestaurantProfile(request, pk=None):
     args = {'restaurant': restaurant, 'meal': meals}
     return render(request, 'restaurantProfile.html', args)
 
+def OlivePage(request):
+    return render(request, 'oliveGardenPage.html')
+
