@@ -8,5 +8,4 @@ install:
   - cd ~/
 
 script:
-  - python test_views.py
-  
+  - pytest test_views.py
