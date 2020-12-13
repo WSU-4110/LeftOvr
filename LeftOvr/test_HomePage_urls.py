@@ -3,6 +3,7 @@ from django.test import TestCase
 from django.http import HttpRequest
 from htmlcss.views import (index,about,custReg,
                            cont, regRec, wh)
+import imp
 
 
 class TestCase_HomePageURLs(TestCase):
