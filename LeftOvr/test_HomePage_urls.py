@@ -1,6 +1,6 @@
 from django.urls import reverse,resolve
 from django.test import TestCase
-from htmlcss.views import index, about, custReg, cont, regRec, wh
+from html.views import index, about, custReg, cont, regRec, wh
 
 
 class TestCase_HomePageURLs(TestCase):
