@@ -6,6 +6,7 @@ python:
 install:
   - pip install -r requirements.txt
   - cd ~/
+  - travis_wait mvn install
 
 script:
   - python
