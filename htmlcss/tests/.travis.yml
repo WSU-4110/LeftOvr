@@ -9,3 +9,4 @@ install:
 
 script:
   - pytest test_views.py
+  - pytest LeftOvr/test_HomePage_urls.py
