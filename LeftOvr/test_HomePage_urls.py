@@ -7,7 +7,7 @@ class TestCase_HomePageURLs(TestCase):
     def test_index_is_resolved(self):
         url= reverse('index')
         print (resolve(url))
-        self.assertIn('<title>Home</title>',index)
+        self.assertIn('<title>Home</title>', index)
         self.assertEquals(resolve(url).func, index)
 
     def test_about_is_resolved(self):
@@ -31,6 +31,6 @@ class TestCase_HomePageURLs(TestCase):
         url = reverse('regRec')
         f=resolve(url)
         print(f)
-        self.assertEquals(f.func,regRec)
+        self.assertEquals(f.func, regRec)
 
 
