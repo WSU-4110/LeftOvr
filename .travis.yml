@@ -8,5 +8,5 @@ install:
   - cd ~/
 
 script:
-  - pytest tests/test_views.py
-  - pytest LeftOvr/test_HomePage_urls.py
+  - pytest LeftOvr/htmlcss/tests/test_views.py
+  - pytest LeftOvr/LeftOvr/test_HomePage_urls.py
