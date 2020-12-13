@@ -9,3 +9,4 @@ install:
 
 script:
   - python test_views.py
+  
