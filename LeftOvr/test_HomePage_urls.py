@@ -1,8 +1,7 @@
 from django.urls import reverse,resolve
 from django.test import TestCase
 from django.http import HttpRequest
-from htmlcss.views import (index,about,custReg,
-                           cont, regRec, wh)
+from htmlcss.views import index,about,custReg,cont, regRec, wh
 import imp
 
 
