@@ -361,21 +361,23 @@ body {
     <div class="gui-window-awards">
       <ul class="guiz-awards-row guiz-awards-row-even">
         <li class="guiz-awards-star"><span class="star goldstar"></span></li>
-        <li class="guiz-awards-title" onclick="myFunction()"><a href="{% url 'Chip' %}">Chipotle</a>
+        <li class="guiz-awards-title" onclick="myFunction()"><a href="#">Chipotle</a>
           <div class="guiz-awards-subtitle">11/28/2020</div>
         </li>
 
         <li class="guiz-awards-time">picked up</li>
-          <button type="submit" class="chipotlebtn">Review</button>
+          <button type="submit" class="chipotlebtn"><a href="{% url 'Chip' %}">Review</a></button>
       </ul>
 <ul class="guiz-awards-row guiz-awards-row-even">
         <li class="guiz-awards-star"><span class="star goldstar"></span></li>
-        <li class="guiz-awards-title" onclick="myFunction()"><a href="{% url 'Dom' %}"> Dominos</a>
+        <li class="guiz-awards-title" onclick="myFunction()"><a href="#"> Dominos</a>
           <div class="guiz-awards-subtitle">11/28/2020</div>
         </li>
 
         <li class="guiz-awards-time">picked up</li>
-    <button type="submit" class="dominosbtn">Review</button>
+    <button type="submit" class="dominosbtn"><a href="{% url 'Dom' %}">Review</a></button>
+
+
       </ul><ul class="guiz-awards-row guiz-awards-row-even">
         <li class="guiz-awards-star"><span class="star goldstar"></span></li>
         <li class="guiz-awards-title" onclick="myFunction()"><a href> Red Lobster</a>
@@ -393,12 +395,12 @@ body {
 
       </ul><ul class="guiz-awards-row guiz-awards-row-even">
         <li class="guiz-awards-star"><span class="star rhodiumstar"></span></li>
-        <li class="guiz-awards-title" onclick="myFunction()"><a href="{% url 'Leo' %}"> Leo's Coney Island</a>
+        <li class="guiz-awards-title" onclick="myFunction()"><a href="#"> Leo's Coney Island</a>
           <div class="guiz-awards-subtitle">11/28/2020</div>
         </li>
         <li class="guiz-awards-time">picked up</li>
 
-        <button type="submit" class="leosbtn">Review</button>
+        <button type="submit" class="leosbtn"><a href="{% url 'Leo' %}">Review</a></button>
       </ul>
 
 <ul class="guiz-awards-row guiz-awards-row-even">

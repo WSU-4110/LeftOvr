@@ -36,7 +36,7 @@ def restaurant_user(view_func):
                 group = request.user.groups.all()[0].name
 
             if group == 'customer':
-                return redirect('index-customer')
+                return redirect('index')
 
             if group == 'restaurant':
                 return view_func(request, *args, **kwargs)
