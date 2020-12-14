@@ -1,14 +1,14 @@
 from django.urls import reverse,resolve
 from django.test import TestCase
-from htmlcss import views
+from htmlcss.views import index, about, custReg, cont, regRec, wh
 
 
 class TestCase_HomePageURLs(TestCase):
     def test_index_is_resolved(self):
         url= reverse('index')
         print (resolve(url))
-        self.assertIn('<title>Home</title>', views.index)
-        self.assertEquals(resolve(url).func, views.index)
+        self.assertIn('<title>Home</title>', index)
+        self.assertEquals(resolve(url).func, index)
 
     def test_about_is_resolved(self):
         url = reverse('about')
