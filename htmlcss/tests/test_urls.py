@@ -1,8 +1,15 @@
-from django.urls import reverse,resolve
-from django.test import TestCase
-from htmlcss.views import index, about, custReg, cont, regRec, wh
+from unittest import TestCase
+from django.urls import reverse, resolve
+from htmlcss.views import index
+from htmlcss.views import custReg
+from htmlcss.views import about
+from htmlcss.views import wh
+from htmlcss.views import cont
+from htmlcss.views import regRec
+
 
 class TestCase_HomePageURLs(TestCase):
+
     def test_index_is_resolved(self):
         url= reverse('index')
         print (resolve(url))
