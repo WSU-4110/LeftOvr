@@ -2,7 +2,6 @@ from django.test import TestCase, Client
 from django.urls import reverse
 import imp
 
-
 class TestViews(TestCase):
 
     def setUp(self):
@@ -62,18 +61,3 @@ class TestViews(TestCase):
 
         self.assertEquals(response.status_code, 200)
         self.assertTemplateUsed(response, 'DominosReview.html')
-
-
-
-class Test(TestCase):
-
-    def test_cust_home(self):
-        self.custHome = reverse('custHome')
-        client = Client()
-
-        response = client.get(self.custHome)
-
-        self.assertEquals(response.status_code, 200)
-        self.assertTemplateUsed(response, 'customerHomepage.html')
-    
-
