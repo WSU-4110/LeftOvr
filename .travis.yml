@@ -8,4 +8,3 @@ install:
 script:
   - python htmlcss/tests/test_views_Omari.py
   - python htmlcss/tests/test_views.py
-  - python htmlcss/tests/test_urls.py
