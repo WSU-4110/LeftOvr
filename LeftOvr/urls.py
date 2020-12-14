@@ -20,6 +20,8 @@ from django.conf.urls import url
 from django.contrib.auth import views as auth_views
 from django.conf import settings
 from django.conf.urls.static import static
+from django.conf.urls import handler404
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,6 +30,10 @@ urlpatterns = [
     path('search/', views.search, name='search'),
     path('about', views.about, name='about'),
     path('cont', views.cont, name='cont'),
+    path('wh/', views.wh, name='why'),
+    path('custReg', views.custReg, name='custReg'),
+    path('restReg', views.restReg, name='restReg'),
+
 
     path('custHome/', views.custHome, name='custHome'),
     # url path for customer registration (from button index)
@@ -93,6 +99,8 @@ urlpatterns = [
          (template_name='password_reset_complete.html'),
          name='password_reset_complete'),
 ]
+
+handler404 = views.error404
 
 if settings.DEBUG:
 
