@@ -19,6 +19,3 @@ class Test(TestCase):
     def test_(self):
         request = wh('why.html')
         self.assertEqual(request)
-
-if __name__ == '__main__':
-    unittest.main()
