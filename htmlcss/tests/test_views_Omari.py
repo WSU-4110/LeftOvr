@@ -3,13 +3,6 @@ from django.urls import reverse
 import imp
 
 
-from htmlcss.views import custHome
-from htmlcss.views import custReg
-from htmlcss.views import custSamp
-from htmlcss.views import custAbout
-from htmlcss.views import custWhy
-from htmlcss.views import custCont
-
 class TestViews(TestCase):
 
     def setUp(self):
@@ -75,24 +68,12 @@ class TestViews(TestCase):
 class Test(TestCase):
 
     def test_cust_home(self):
-        request = custHome('customerHomepage.html')
-        self.assertEqual(request, 'custHome')
-    def test_cust_reg(self):
-        request = custReg('customerRegistration.html')
-        self.assertEqual(request)
-    def test_cust_samp(self):
-        request = custSamp('customersamplepage.html')
-        self.assertEqual(request)
-    def test_cust_about(self):
-        request = custAbout('CustAbout.html')
-        self.assertEqual(request)
-    def test_cust_why(self):
-        request = custWhy('CustWhy.html')
-        self.assertEqual(request)
-    def test_cust_cont(self):
-        request = custCont('CustContact.html')
-        self.assertEqualcustCont(request)
+        self.custHome = reverse('custHome')
+        client = Client()
 
-if __name__ == '__main__':
-    unittest.main()
+        response = client.get(self.custHome)
+
+        self.assertEquals(response.status_code, 200)
+        self.assertTemplateUsed(response, 'customerHomepage.html')
+    
 
