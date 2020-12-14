@@ -169,7 +169,7 @@ a {
                                             <img src="{% static 'images/search_icon.png' %}" class="icon"></a>
 </li>
                                         {% if user.is_authenticated %}
-                                        <li class="mean-last"><img src="{{user.profile_pic.url}}" width="100" height="100"> </li>
+                                        <li class="mean-last"><img src="{{ customer.profile_pic.url }}" width="100" height="100"> </li>
                                         {% endif %}
                                          <ul>
                                             <li> <a href="{% url 'proPage' %}"> Profile</a> </li>
@@ -177,6 +177,7 @@ a {
                                             <li> <a href="{% url 'custCont' %}">Contact us</a> </li>
                                             <li> <a href="{% url 'custWhy' %}"> Why?</a> </li>
                                             <li> <a href="{% url 'custAbout' %}">About US</a> </li>
+                                            <li> <a href="{% url 'custHome' %}">Search Nearby</a> </li>
                                             <hr>
                                             <li> <a href="{% url 'logout' %}" class="logout"> Log Out </a></li>
                                         </ul>
@@ -205,7 +206,7 @@ a {
           <div class="card-body">
             <p class="mb-0"><strong class="pr-1">User ID:</strong>{{user.id}}</p>
             <p class="mb-0"><strong class="pr-1">State/License ID:</strong>{{user.idNum}}</p>
-            <p class="mb-0"><strong class="pr-1">Leftover Status: </strong>{{user.type}}</p>
+            <p class="mb-0"><strong class="pr-1">Leftover Status: </strong>{{user.Group}}</p>
           </div>
         </div>
       </div>

@@ -1,25 +1,34 @@
 
 from django.shortcuts import render, redirect
-from .models import Customer, RestaurantMore
-from .models import Restaurant
-from .models import ContactUs
+from django.views.generic import TemplateView
+
+from .models import Customer, Restaurant, ContactUs, Meal
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm
 from django.contrib import messages
-from .decorators import unauthenticated_user, allowed_users
+from .decorators import unauthenticated_user, allowed_users, restaurant_user
 from django.contrib.auth import get_user_model
+import pytest
+from django.contrib.auth.models import Group, User
+from .forms import UserRegisterForm, CustomerRegisterForm
+from .filters import RestaurantFilter
 
-User = get_user_model()
 
-def searchBar(request):
-    if request.method == 'GET':
-        search = request.GET.get('searc')
-        post = Restaurant.objects.all().filter(name=search)
-        return render(request, 'searchbar.html', {'post': post})
 
 def index(request):
     return render(request, 'index.html')
+
+def search(request):
+
+    restaurants = Restaurant.objects.filter()
+
+    myFilter = RestaurantFilter(request.GET)
+    restaurants = myFilter.qs
+
+    context = {'myFilter': myFilter, 'restaurants': restaurants}
+    return render(request, 'searchbar.html', context)
+
 
 def about(request):
     return render(request, 'aboutus.html')
@@ -51,7 +60,7 @@ def sendMes(request):
 def wh(request):
     return render(request, 'why.html')
 
-def login(request):
+def logI(request):
     return render(request, 'login.html')
 
 def actionC(request):
@@ -142,28 +151,53 @@ def actionRI(request):
 
 def head(request):
     p = request.POST.get("restLogo")
-    l = Restaurant.profile_pic(p)
-    l.save()
     return render(request, "RestaurantHomepage.html")
 
 def regRec(request):
     return render(request, "receiptSample.html")
 
-@unauthenticated_user
-def register(request):
+
+def customerRegister(request):
+
+    form = UserRegisterForm()
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
         if form.is_valid():
-            form.save()
+            user = form.save()
             username = form.cleaned_data.get('username')
+
+            group = Group.objects.get(name='customer')
+            user.groups.add(group)
+
             messages.success(request, f'Account created! You are now able to log in!')
             return redirect('index')
-    else:
-        form = UserRegisterForm()
-    return render(request, 'register.html', {'form': form})
+
+    context = {'form': form}
+    return render(request, 'customerRegistration.html', context)
+
+def restaurantRegister(request):
+
+    form = UserRegisterForm()
+    if request.method == 'POST':
+        form = UserRegisterForm(request.POST)
+        if form.is_valid():
+            user = form.save()
+            username = form.cleaned_data.get('username')
+
+            group = Group.objects.get(name='restaurant')
+            user.groups.add(group)
+
+            messages.success(request, f'Account created! You are now able to log in!')
+            return redirect('index')
+
+    context = {'form': form}
+    return render(request, 'RestaurantRegistration.html', context)
+
+
 
 def ChipReview(request):
     return render(request, "ChipotleReview.html")
+
 
 
 def DomReview(request):
@@ -172,3 +206,30 @@ def DomReview(request):
 
 def LeoReview(request):
     return render(request, "LeosReview.html")
+
+def Thankyou_Reserver(request):
+    return render(request, 'ThankYou_Reserver.html')
+
+def CustomerDemoReserve(request):
+    return render(request, 'CustomerDemoReservePage.html')
+
+def NoResult(request):
+    return render(request, 'NoResult.html')
+
+def Timer(request):
+    return render(request, 'TimerSampleCode.html')
+
+
+def RestaurantProfile(request, pk=None):
+    if pk:
+        restaurant = Restaurant.objects.get(pk=pk)
+        meals = Meal.objects.get(pk=pk)
+    else:
+        user = request.User
+
+    args = {'restaurant': restaurant, 'meal': meals}
+    return render(request, 'restaurantProfile.html', args)
+
+def OlivePage(request):
+    return render(request, 'oliveGardenPage.html')
+

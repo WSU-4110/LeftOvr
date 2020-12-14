@@ -59,20 +59,14 @@
 
                                         <li>  <a href="{% url 'logout' %}">Logout</a> </li>
                                         <li>  <a href="{% url 'proPage' %}">Profile</a></li>
+                                        <li>  <a href="{% url 'actionRI'  %}">Rest Profile</a> </li>
 
                                         {% else %}
                                         <li> <a href="{% url 'login' %}">Login </a> </li>
                                         {% endif %}
-                                        <li class="mean-last"> <a href="#" onclick="myFunction()">
+                                        <li class="mean-last"> <a href="{% url 'search' %}" onclick="myFunction()">
                                             <img src="{% static 'images/search_icon.png' %}" alt="#" /></a> </li>
-                                        {% if user.is_authenticated %}
-                                        <li class="mean-last"><img src="{{user.profile_pic.url}}" width="100" height="100"> </li>
-                                        {% endif %}
-                                        <script>
-                                            function myFunction() {
-                                                alert("OOPS. Please, Log in to search the website! ");
-                                            }
-                                        </script>
+
                                     </ul>
                                 </nav>
                             </div>
@@ -94,22 +88,28 @@
                 <div class="carousel-item active">
 
                   <img class="first-slide" style="width: 1600px; height: 900px;" src="{% static 'images/pizza.jpg' %}" alt="First" >
-                    <div class="container">
+                    <article class="container">
                         <div class="carousel-caption relative">
                             {% if user.is_authenticated %}
                             <h1 style="color:white;">Hey, {{user.username}}! <br><strong class="cur" style="color: #CF9695">Welcome to LeftOvr.</strong></h1>
                             {% else %}
                             <h1 style="color:white;">Hey, there! <br><strong class="cur" style="color: #CF9695">Welcome to LeftOvr.</strong></h1>
+
                             {% endif %}
                             <span style="color: #f7f7f7">We can help you connect to restaurants and customers.</span>
-                            <p style="color: white;">Our platform will help you get free food from restaurants. <br>The food that will be provided by the restaurant will be leftover food.<br> This is to reduce food waste.<br>Choose you role and sign up to our platform. If you are interested.</p>
+                            <p style="color: white;">Our platform will help you get free food from restaurants.
+                                <br>The food that will be provided by the restaurant will be leftover food.
+                                <br> This is to reduce food waste.
+                                <br>Choose you role and sign up to our platform. If you are interested.
+                            </p>
+
                                                                     <!-- button  leaf  restaurant & customer-->
-                            {% if user.is_authenticated %}
-                            <p>Enjoy!</p>
-                            {% else %}
-                            <div class="button_section"> <a class="main_bt" href="{% url 'register' %}">Customer</a> <a class="main_bt" href="{% url 'restReg' %}">Restaurant</a> </div>
-                            {% endif %}
+
+                           }
+                            <div class="button_section"> <a class="main_bt" href="{% url 'customer-register' %}">Customer</a> <a class="main_bt" href="{% url 'restaurant-register' %}">Restaurant</a> </div>
+
                         </div>
+                    </article>
                     </div>
                 </div>
             </div>
@@ -201,7 +201,7 @@
                     </div>
                 </div>
             </div>
-            <h3> If you have any questions, feedbacks, or suggestion, please feel free to contact us. <br> Click <a href="{% url 'custCont' %}"> Contact Us</a></h3>
+            <h3> If you have any questions, feedbacks, or suggestion, please feel free to contact us. <br> Click <a href="{% url 'custHome' %}"> Contact Us</a></h3>
             <h3> Thank you</h3>
             <hr><hr>
         </div>
@@ -241,16 +241,17 @@
 
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                         <ul class="location_icon">
-                            <li> <img src="% static 'icon/email.png' %}"><span>TheLeftOvrs4111@gmail.com<br>TheLeftOvrs4111@gmail.com</span></li>
+                            <li> <img src="% static 'icon/email.png' %}"><span>LeftOvrDemo@gmail.com<br>LeftOvrDemo@gmail.com</span></li>
                         </ul>
                     </div>
                     <!-- social media -->
 
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                         <ul class="location_icon">
-                            <li> <a href="https://www.facebook.com/"><img src="{% static 'icon/facebook.png' %}"></a></li>
-                            <li> <a href="https://twitter.com/?lang=en"><img src="{% static 'icon/Twitter.png' %}"></a></li>
-                            <li> <a href="https://www.linkedin.com/home"><img src="{% static 'icon/linkedin.png' %}"></a></li>
+                            <li> <a href="#"><img src="{% static 'icon/facebook.png' %}"></a></li>
+                            <li> <a href="#"><img src="{% static 'icon/Twitter.png' %}"></a></li>
+                            <li> <a href="#"><img src="{% static 'icon/linkedin.png' %}"></a></li>
+                            <li> <a href="#"><img src="{% static 'icon/google+.png' %}"></a></li>
                         </ul>
                     </div>
                 </div>

@@ -27,6 +27,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # url paths for index about and contact pages
     path('', views.index, name='index'),
+    path('search/', views.search, name='search'),
     path('about', views.about, name='about'),
     path('cont', views.cont, name='cont'),
     path('wh/', views.wh, name='why'),
@@ -34,20 +35,23 @@ urlpatterns = [
     path('restReg', views.restReg, name='restReg'),
 
 
-    path('custHome', views.custHome, name='custHome'),
+    path('custHome/', views.custHome, name='custHome'),
+    # url path for customer registration (from button index)
+    path('custReg/', views.custReg, name='custReg'),
     path('custSamp', views.custSamp, name='custSamp'),
     path('restHome', views.restHome, name='restHome'),
     path('restInp', views.restInp, name='restInp'),
-
+    # url path for restaurant registration page
+    path('restReg', views.restReg, name='restReg'),
     path('sendMes', views.sendMes, name='sendMes'),
-
+    # url path for why
+    path('wh', views.wh, name='why'),
     # path for login.html
     path('login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='logout.html'), name='logout'),
     path('act/', views.actionR, name='actionR'),
     path('acti/', views.actionCH, name='actionCH'),
     path('new/', views.actionRH, name='actionRH'),
-    path('search/', views.searchBar, name='searchbar'),
 
     path('restSamp', views.restSamp, name='restSamp'),
     path('new1/', views.actionRI, name='actionRI'),
@@ -61,7 +65,22 @@ urlpatterns = [
     path('custWhy', views.custWhy, name='custWhy'),
     path('regRec', views.regRec, name='regRec'),
 
-    path('register/', views.register, name='register'),
+    path('customer-register/', views.customerRegister, name='customer-register'),
+    path('restaurant-register/', views.restaurantRegister, name='restaurant-register'),
+
+    path('LeoReview/', views.LeoReview, name='Leo'),
+    path('ChipReview/', views.ChipReview, name='Chip'),
+    path('DomReview/', views.DomReview, name='Dom'),
+    path('olivePage/', views.OlivePage, name='Olive'),
+
+    path('customer-demo-reserve/', views.CustomerDemoReserve, name='customer-reserve'),
+    path('no-result/', views.NoResult, name='no-result'),
+    path('thank-you-resv/', views.Thankyou_Reserver, name='thank-you-reserve'),
+    path('timer/', views.Timer, name='timer'),
+    path('restaurant/(?P<pk>\d+)/', views.RestaurantProfile, name='restaurant-profile-with-pk'),
+
+
+
 
    path('password-reset/',
          auth_views.PasswordResetView.as_view

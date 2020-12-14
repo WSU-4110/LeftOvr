@@ -11,7 +11,7 @@
     <!-- site metas -->
     <title>Home</title>
 
-    <meta name="author" content="Fahmida&Susanna">
+    <meta name="author" content="Fahmida">
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 
@@ -107,12 +107,32 @@ a {
   background-color: none;
   text-align: center;
 }
+.wrapper_tab{
+display: 100%;
+}
+.button1 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px;
+  color: white;
+  background-color: #CF9695;
+  background-color: #CF9695;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button1:hover {
+opacity: 40%;
+}
+
 
 
 </style>
 </head>
 <!-- body -->
-     <header>
+    <header>
         <!-- header inner -->
         <div class="header">
             <div class="container">
@@ -142,9 +162,9 @@ a {
                                         </ul>
                                         </li>
                                         <li class="search-icon">
-
-
-
+                                            <form class="search">
+                                           <input type="text" class="s-input" placeholder="Search for restaurants..........." required>
+                                          </form>
 
                                         </li>
                                         <li class = "icon"> <a href="#search-icon">
@@ -173,24 +193,52 @@ a {
         <!-- end header inner -->
     </header>
 <body class="main-layout">
-<form action="/acti/" method="post">
-    {% csrf_token %}
-  <div class="container">
-    <h1>Welcome {{user.username}}!</h1>
-    <p>What free food options are near you?Let's get started!</p>
-    <hr>
-<input type="text" placeholder="Enter a new address" name="location" id="location" required>
-<hr>
-<li> <img src="{% static 'icon/location.png' %}"><button type="submit" class="current location">Use current location</button>
-<hr>
+<div id="wrapper" class="wrapper_tab">
+<h1 style="text-align: center;"> <img src='https://www.thegoldenpig.com/site/assets/files/custom/menu_header_nopig.png'></h1>
 
+<table align='center' cellspacing=2 cellpadding=10 id="data_table" border=1>
+
+<tr>
+<th>Item</th>
+<th>Condition</th>
+<th>Amount</th>
+<th>Actions</th>
+</tr>
+
+<tr id="row1">
+<td id="item_row1">Pizza<br> <img src="https://media.istockphoto.com/photos/tasty-pepperoni-pizza-and-cooking-ingredients-tomatoes-basil-on-black-picture-id1083487948?k=6&m=1083487948&s=612x612&w=0&h=lK-mtDHXA4aQecZlU-KJuAlN9Yjgn3vmV2zz5MMN7e4=" style="height: 100px; width: 150px;"></td>
+<td id="condition_row1">Good</td>
+<td id="amount_row1">10</td>
+<td>
+<button type="button" class=button1 id=""> <a href="{% url 'thank-you-reserve' %}">Reserve</a></button>
+</td>
+
+</tr>
+
+<tr id="row2">
+<td id="item_row2">Pasta<br><img src="https://images.immediate.co.uk/production/volatile/sites/2/2018/11/OnePotPasta-47b5b0a.jpg?quality=45&resize=768,574" style="height: 100px; width: 150px;"</td>
+<td id="condition_row2">Ok</td>
+<td id="amount_row2">26</td>
+<td>
+<button type="button" class=button1 id=""> <a href="{% url 'thank-you-reserve' %}">Reserve</a></button>
+</td>
+
+</tr>
+
+<tr id="row3">
+<td id="item_row3">Fruits<br><img src="https://www.thespruceeats.com/thmb/qlT2neuIBeMYNR4w0K_GR-e2wZ4=/1885x1414/smart/filters:no_upscale()/Fruitsalad-GettyImages-811628388-5a0b1547482c5200372ddcd9.jpg" style="height: 100px; width: 150px;"</td>
+<td id="condition_row3">Perfect</td>
+<td id="amount_row3">19</td>
+<td>
+<button type="button" class=button1 id=""> <a href="{% url 'thank-you-reserve' %}">Reserve</a></button>
+</td>
+</tr>
+
+
+</table>
 </div>
-
-</form>
-
-
- <!-- footer -->
-    <footer>
+<br> <br>  
+<footer>
         <div class="footer">
             <div class="container">
                 <div class="row">
@@ -248,17 +296,7 @@ a {
     <!-- sidebar -->
     <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
     <script src="{% static 'js/custom.js' %}"></script>
-
-
-    <!-- Jquery JS-->
-    <script src="{% static 'js/vendor/jquery/jquery.min.js' %}"></script>
-    <!-- Vendor JS-->
-    <script src="{% static 'js/vendor/select2/select2.min.js' %}"></script>
-    <script src="{% static 'js/vendor/datepicker/moment.min.js' %}"></script>
-    <script src="{% static 'js/vendor/datepicker/daterangepicker.js' %}"></script>
-
-    <!-- Main JS-->
-    <script src="{% static 'js/global.js' %}"></script>
-
 </body>
+
 </html>
+
