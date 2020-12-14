@@ -1,30 +1,43 @@
 from unittest import TestCase
-from htmlcss.views import custHome
-from htmlcss.views import custReg
-from htmlcss.views import custSamp
-from htmlcss.views import custAbout
-from htmlcss.views import custWhy
-from htmlcss.views import custCont
+from django.test import Client, TestCase
+from django.urls import reverse
+
+
 class Test(TestCase):
 
     def test_cust_home(self):
-        request = custHome('customerHomepage.html')
-        self.assertEqual(request, 'custHome')
+        client = Client()
+        self.client = Client()
+        self.custHome = reverse('custHome')
+        response = client.get(self.custHome)
+        self.assertTemplateUsed(response, 'CustomerHomepage.html')
     def test_cust_reg(self):
-        request = custReg('customerRegistration.html')
-        self.assertEqual(request)
+        client = Client()
+        self.client = Client()
+        self.custReg = reverse('custReg')
+        response = client.get(self.custReg)
+        self.assertTemplateUsed(response, 'customerRegistration.html')
     def test_cust_samp(self):
-        request = custSamp('customersamplepage.html')
-        self.assertEqual(request)
+        client = Client()
+        self.client = Client()
+        self.custSamp = reverse('custSamp')
+        response = client.get(self.custSamp)
+        self.assertTemplateUsed(response, 'customersamplepage.html')
     def test_cust_about(self):
-        request = custAbout('CustAbout.html')
-        self.assertEqual(request)
+        client = Client()
+        self.client = Client()
+        self.custAbout = reverse('custAbout')
+        response = client.get(self.custAbout)
+        self.assertTemplateUsed(response, 'CustAbout.html')
     def test_cust_why(self):
-        request = custWhy('CustWhy.html')
-        self.assertEqual(request)
+        client = Client()
+        self.client = Client()
+        self.custWhy = reverse('custWhy')
+        response = client.get(self.custWhy)
+        self.assertTemplateUsed(response, 'Custwhy.html')
     def test_cust_cont(self):
-        request = custCont('CustContact.html')
-        self.assertEqualcustCont(request)
-
-if __name__ == '__main__':
-    unittest.main()
+        client = Client()
+        self.client = Client()
+        self.custCont = reverse('custCont')
+        response = client.get(self.custCont)
+        self.assertTemplateUsed(response, 'CustContact.html')
