@@ -7,4 +7,3 @@ install:
 
 script:
   - python htmlcss/tests/test_views.py
-  - python LeftOvr/test_HomePage_urls.py
