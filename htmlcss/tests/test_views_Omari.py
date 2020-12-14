@@ -1,6 +1,5 @@
 from django.test import TestCase, Client
 from django.urls import reverse
-from htmlcss.views import index, about, custReg, cont, regRec, wh
 import imp
 
 class TestViews(TestCase):
